@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Font Awesome -->
+    <link href="./font-awesome/css/all.css" rel="stylesheet">
+      
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <style>
+        .area {
+            background:#000;
+            display:block;
+            height:28.89vw;
+            opacity:0;
+            position:absolute;
+            width:41.4vw;
+            left:29.7vw;
+            padding: 0em;
+        }
+        #area1 {
+            top: 3.6vw;
+        }
+        #area2 {
+            top: 32.49vw;
+        }
+        #area3 {
+            top: 61.38vw;
+        }
+        #area4 {
+            top: 90.27vw;
+        }
+        #area5 {
+            top: 119.16vw;
+        } 
+        
+        .intro-btn{
+            margin-top: 0.375rem;
+            margin-right: 0.75rem;
+            margin-bottom: 0.375rem;
+            margin-left: 0.75rem;
+            color: #525252;
+            vertical-align: middle;
+        }
+        .intro-btn:focus {
+            border: none;
+            outline: none;
+        }
+        .intro-btn:hover {
+            color: #666767;
+        }
+        
+    </style>
+      
+      
+    <title>Linnea Rylander</title>
+  </head>
+  <body>
+      
+<div id="intro" class="position-relative overflow-hidden text-center" style="background-color: #C6DFDF">
+  <div class="col-md-12 p-lg-5 mx-auto my-5">
+    <h1 class="display-4 font-weight-normal" style="font-family: 'Righteous', cursive; font-weight: 900; font-size: 6vw; text-transform: uppercase; margin-bottom: 0; color: #525252;">Linnea Rylander</h1>
+    <h2 class="lead font-weight-normal" style="font-family: 'Righteous', cursive; font-weight: 900; font-size: 2.5vw; text-transform: uppercase; margin-bottom: 4vh; color: #525252">DEVELOPER • DESIGNER • ENGINEER</h2>
+      
+    
+    <a class="intro-btn" href="https://github.com/lrylander"><i style="font-size: 5vw" class="fab fa-github-square"></i></a>
+    <a class="intro-btn" href="https://www.linkedin.com/in/linnearylander"><i style="font-size: 5vw" class="fab fa-linkedin"></i></a>
+    <a class="intro-btn" href="mailto:linnearylander@gmail.com"><i style="font-size: 5vw" class="fas fa-envelope-square"></i></a>
+    <a class="intro-btn" href="Linnea_Rylander_Resume.pdf"><i style="font-size: 4.3vw" class="fas fa-file-alt"></i></a>
+
+  </div>
+</div>     
+      
+      
+<div style="background: repeating-linear-gradient(#C6DFDF, #C6DFDF 94.99%, #bee07e 95.01%, #bee07e 97.99%, #a5a7a7 98.01%, #a5a7a7 100%);">
+    <a id="area1" class="area" onmouseover="onHoverRoom(this)" onmouseout="onHoverOutRoom(this)"></a>
+    <a id="area2" class="area" onmouseover="onHoverRoom(this)" onmouseout="onHoverOutRoom(this)"></a>
+    <a id="area3" class="area" onmouseover="onHoverRoom(this)" onmouseout="onHoverOutRoom(this)"></a>
+    <a id="area4" class="area" onmouseover="onHoverRoom(this)" onmouseout="onHoverOutRoom(this)"></a>
+    <a id="area5" class="area" onmouseover="onHoverRoom(this)" onmouseout="onHoverOutRoom(this)"></a>
+    <img id="building" src="./images/building.png" style="width: 60vw; margin-left: 20vw;"/>
+</div>   
+      
+<div style="background-color: #a5a7a7; height: 10vh;"></div>
+      
+<div class="position-relative overflow-hidden text-center" style="background-color: #bee07e; height: 10vh;">
+
+</div>
+      
+<div style="background-color: #967c64; height: 50vh">
+    <h1 class="display-4 font-weight-normal" style="padding-left: 5vw; padding-top: 10vh; font-family: 'Righteous', cursive; font-weight: 900; font-size: 3.7vw; color: #fff; text-transform: uppercase;">Side Projects</h1>
+</div>
+      
+    <script>
+        function onHoverRoom(x){
+          if (x.id === "area1"){
+            // facebook text appears
+            document.getElementById("building").setAttribute("src", "https://lh3.googleusercontent.com/IEU_n8CkPQVDP6cyzF1DmeleMnLrhq3DV01crthZ-wYQ-MIwHcZYSMu2cSvAGc1K-QoIrm8kAyOa1fq-Paw8llyVPl2_42GFS6MzVH5-NWQjx8F1G7buOQM_RQxXo33D5vJlMeqcYw=w2400");
+          } else if (x.id === "area2") {
+            // messenger text appears
+           document.getElementById("building").setAttribute("src", "https://lh3.googleusercontent.com/XZqQbOJIiCvVMXd__eh7xpxiQp5t3imBJw2vc2jPXQOnbVZ-3RHhyXc6TqxE4-NPcRfudLIHP2yQ3Rcbc3yQZ8-SVGH3B4KWdLxQRLCQ3Fx-XlF40-nriV7VHAHdmKAW_otbKaKd6g=w2400");
+          } else if (x.id === "area3") {
+           // twitch text appears
+           document.getElementById("building").setAttribute("src", "https://lh3.googleusercontent.com/5ggLbS27sJwTtiGyl7dEkAVLbFj2cnvcZRnmMrw3jzw4lskotVbW22mW2SH9fF8MtZNfmXXmbK1PbT7Csh57EwNMzSVHIFhIdT8MV3ApSwEOC6tUKClrhpwfA8Nud4Mr7m7kwq8-ig=w2400");
+          } else if (x.id === "area4") {
+            // Mckinsey text appears
+           document.getElementById("building").setAttribute("src", "https://lh3.googleusercontent.com/AuYjCIa9zBrYJqGl9aic6TPTs_3ePdrl1kYK9yv-UOVRDTghhYHXLwW2TayYSC264Wo72NOrJpqlG_CWHsB9hBKSQS1IPTIEmDxqfTT45dQS1DbV314fVtWY7ZbhUsj3bItiesLZ9A=w2400");
+          } else if (x.id === "area5") {
+           // MIT text appears
+           document.getElementById("building").setAttribute("src", "https://lh3.googleusercontent.com/k4K_5ytDgFwXNdKSVXriwDBu5zSh2fdyme_9dWQWUQryEfWy8NaLuKDPIS8sqF0pfasrqRaWd4OfGoRaSk5gJCaWGbKc1YlCt3zc9PotdsKlMApnBmlsHeI9r4J4dc1NdSgYDeOJHQ=w2400");
+          };
+        };
+
+        function onHoverOutRoom(x){
+            document.getElementById("building").setAttribute("src", "./images/building.png");
+        };
+        
+        function setHeights(){
+          console.log("setting heights");
+          console.log(document.getElementById('intro').offsetHeight);
+          var introHeight = document.getElementById('intro').offsetHeight.toString().concat("px");
+          console.log(introHeight)
+          console.log(document.getElementById("area1").style.marginTop)
+          document.getElementById("area1").style.marginTop = introHeight;
+          document.getElementById("area2").style.marginTop = introHeight;
+          document.getElementById("area3").style.marginTop = introHeight;
+          document.getElementById("area4").style.marginTop = introHeight;
+          document.getElementById("area5").style.marginTop = introHeight;
+        console.log(document.getElementById("area1").style.marginTop);
+        };
+        
+        window.addEventListener('resize', setHeights);
+        window.addEventListener('load', setHeights);
+    </script>
+      
+      
+      
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
