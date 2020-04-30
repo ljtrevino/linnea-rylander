@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <style>
+        html, body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
         .area {
             background:#000;
             display:block;
@@ -54,6 +58,142 @@
             color: #666767;
         }
         
+        .arrow-up {
+          width: 0; 
+          height: 0; 
+          border-left: 5vw solid transparent;
+          border-right: 5vw solid transparent;
+          margin-top: 0.5vh;
+        }
+        
+        #linnear-arrow {
+          border-bottom: 4vh solid #a9d562;
+          margin-left: 8.25vw
+        }
+        
+        #wheel-deal-arrow {
+          border-bottom: 4vh solid #bd9aab;
+          margin-left: 26.75vw;
+        }
+        
+        #street-smarts-arrow {
+          border-bottom: 4vh solid #2c3e51;
+          margin-left: 45vw;
+        }
+        
+        #vulture-mit-arrow {
+          border-bottom: 4vh solid #42ce97;
+          margin-left: 63.5vw;
+        }
+        
+        #swe-mit-arrow {
+          border-bottom: 4vh solid #aa98bf;
+          margin-left: 82vw;
+        }       
+
+        .arrow-down {
+          width: 0; 
+          height: 0; 
+          border-left: 20px solid transparent;
+          border-right: 20px solid transparent;
+
+          border-top: 20px solid #f00;
+        }
+        
+        .card{
+            border: none;
+        }
+        
+        
+        .cl1 {
+          width: 5vw;
+          height: 5vw;
+          border-radius: 50%;
+          background: #fff;
+          position: absolute;
+
+        }
+
+        .cl2 {
+          width: 10vw;
+          height: 10vw;
+          border-radius: 50%;
+          position: absolute;
+          top: -5vw;
+          left: 2.5vw;
+          background: #fff;
+        }
+
+        .cl3 {
+          width: 7.5vw;
+          height: 7.5vw;
+          border-radius: 50%;
+          position: absolute;
+          top: -2.5vw;
+          left: 10vw;
+          background: #fff;
+        }
+
+        .cl4 {
+          width: 11vw;
+          height: 1.5vw;
+          background: #fff;
+          position: absolute;
+          left: 2.5vw;
+          top: 3.5vw;
+        }
+        
+        .cloud1 {
+          top: -30vw;
+          position: relative;
+          opacity: 60%;
+          animation: slide 40s linear infinite;
+        }
+
+        .cloud2 {
+          top: -10vw;
+          position: relative;
+          opacity: 40%;
+          animation: slide 30s linear infinite;
+        }
+        
+        .cloud3 {
+          top: 5vw;
+          position: relative;
+          opacity: 30%;
+          animation: slide-reverse 20s linear infinite;
+        }
+        
+        #blue-car {
+          position: relative;
+          top: -8vw;
+          animation: slide-reverse 8s linear infinite;
+        }
+        
+        #orange-car {
+          position: absolute;
+          top: -8vw;
+          animation: slide 10s linear infinite;
+        }
+        
+        @keyframes slide {
+          from {
+            transform: translateX(-35vw);
+          }
+          to {
+            transform: translateX(135vw);
+          }
+        }
+        
+        @keyframes slide-reverse {
+          from {
+            transform: translateX(135vw);
+          }
+          to {
+            transform: translateX(-35vw);
+          }
+        }
+        
     </style>
       
       
@@ -66,17 +206,48 @@
     <h1 class="display-4 font-weight-normal" style="font-family: 'Righteous', cursive; font-weight: 900; font-size: 6vw; text-transform: uppercase; margin-bottom: 0; color: #525252;">Linnea Rylander</h1>
     <h2 class="lead font-weight-normal" style="font-family: 'Righteous', cursive; font-weight: 900; font-size: 2.5vw; text-transform: uppercase; margin-bottom: 4vh; color: #525252">DEVELOPER • DESIGNER • ENGINEER</h2>
       
-    
     <a class="intro-btn" href="https://github.com/lrylander"><i style="font-size: 5vw" class="fab fa-github-square"></i></a>
     <a class="intro-btn" href="https://www.linkedin.com/in/linnearylander"><i style="font-size: 5vw" class="fab fa-linkedin"></i></a>
     <a class="intro-btn" href="mailto:linnearylander@gmail.com"><i style="font-size: 5vw" class="fas fa-envelope-square"></i></a>
     <a class="intro-btn" href="Linnea_Rylander_Resume.pdf"><i style="font-size: 4.3vw" class="fas fa-file-alt"></i></a>
 
   </div>
-</div>     
+</div>  
+      
+
+    <div class="cloud1">
+      <div class="cl1">
+      </div>
+      <div class="cl2">
+      </div>
+      <div class="cl3">
+      </div>
+      <div class="cl4">
+      </div>
+    </div>
+    <div class="cloud2">
+      <div class="cl1">
+      </div>
+      <div class="cl2">
+      </div>
+      <div class="cl3">
+      </div>
+      <div class="cl4">
+      </div>
+    </div>
+    <div class="cloud3">
+      <div class="cl1">
+      </div>
+      <div class="cl2">
+      </div>
+      <div class="cl3">
+      </div>
+      <div class="cl4">
+      </div>
+    </div>
       
       
-<div style="background: repeating-linear-gradient(#C6DFDF, #C6DFDF 94.99%, #bee07e 95.01%, #bee07e 97.99%, #a5a7a7 98.01%, #a5a7a7 100%);">
+<div style="background: repeating-linear-gradient(#C6DFDF, #C6DFDF 94.99%, #bee07e 95.01%, #bee07e 97.99%, #a5a7a7 98.01%, #a5a7a7 100%); z-index: 5;">
     <a id="area1" class="area" onmouseover="onHoverRoom(this)" onmouseout="onHoverOutRoom(this)"></a>
     <a id="area2" class="area" onmouseover="onHoverRoom(this)" onmouseout="onHoverOutRoom(this)"></a>
     <a id="area3" class="area" onmouseover="onHoverRoom(this)" onmouseout="onHoverOutRoom(this)"></a>
@@ -85,14 +256,155 @@
     <img id="building" src="./images/building.png" style="width: 60vw; margin-left: 20vw;"/>
 </div>   
       
-<div style="background-color: #a5a7a7; height: 10vh;"></div>
       
-<div class="position-relative overflow-hidden text-center" style="background-color: #bee07e; height: 10vh;">
-
+            
+<div style="background-color: #a5a7a7; height: 5vw;">
+    <img id="blue-car" src="images/blue-car.PNG" style="width: 20vw; position: relative;">
+</div>
+<div style="background-color: #a5a7a7; height: 5vw;">
+    <img id="orange-car" src="images/orange-car.PNG" style="width: 20vw; position: relative;">
 </div>
       
-<div style="background-color: #967c64; height: 50vh">
-    <h1 class="display-4 font-weight-normal" style="padding-left: 5vw; padding-top: 10vh; font-family: 'Righteous', cursive; font-weight: 900; font-size: 3.7vw; color: #fff; text-transform: uppercase;">Side Projects</h1>
+      
+<div class="position-relative overflow-hidden text-center" style="background-color: #bee07e; height: 10vh;">
+</div>
+      
+<div style="background-color: #967c64; padding-bottom: 10vh;">
+    <h1 class="display-4 font-weight-normal" style="padding-left: 5vw; padding-top: 5vh; padding-bottom: 5vh; font-family: 'Righteous', cursive; font-weight: 900; font-size: 4vw; color: #fff; text-transform: uppercase;">Side Projects</h1>
+    <div class="row" style="padding-left: 5vw; padding-right: 5vw;">
+        <div class="col">
+            <img src="images/linnear-icon.PNG" style="height:inherit; width:inherit; border-radius: 500px" onclick="toggleCard('linnear-card')">
+        </div>
+        <div class="col">
+            <img src="images/wheel-deal-icon.PNG" style="height:inherit; width:inherit; border-radius: 500px" onclick="toggleCard('wheel-deal-card')">
+        </div>
+        <div class="col">
+            <img src="images/street-smarts-icon.PNG" style="height:inherit; width:inherit; border-radius: 500px" onclick="toggleCard('street-smarts-card')">
+        </div>
+        <div class="col">
+            <img src="images/vulture-mit-icon.PNG" style="height:inherit; width:inherit; border-radius: 500px" onclick="toggleCard('vulture-mit-card')">
+        </div>
+        <div class="col">
+            <img src="images/swe-mit-icon.PNG" style="height:inherit; width:inherit; border-radius: 500px" onclick="toggleCard('swe-mit-card')">
+        </div>
+    </div>
+    
+    
+    <!-- Linnear Card -->
+    <div id='linnear-card' style='display: none'>
+        <div id="linnear-arrow" class="arrow-up" style="height: 5vh"></div>
+        <div class="card" style="margin-left: 5vw; margin-right: 5vw; border-radius: 30px; background-color: #a9d562">
+          <div class="row no-gutters" style="padding: 2vw; color: white">
+            <div class="col">
+              <div class="card-body">
+                <h1 class="card-title" style="font-size: 3vw; font-family: 'Righteous', cursive; text-transform: uppercase">Linnear &nbsp;<a href="https://linnear.info/"><i style="font-size: 2.7vw; color: white;" class="fas fa-external-link-alt"></i></a></h1>
+                <p class="card-text" style="font-family: 'Roboto'; font-size: 1.1rem;">Text here</p>
+                <p class="card-text text-muted">Created Fall 2019</p>
+              </div>
+            </div>
+            <div class="col">
+              <iframe style="width: 100%; height:475px; overflow: auto;max-width: 100%;" src="https://www.youtube.com/embed/yxqBb4jaiFQ?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+            </div>
+          </div>
+        </div>
+    </div> 
+    
+    
+    <!-- Wheel Deal Card -->
+    <div id='wheel-deal-card' style='display: none'>
+        <div id="wheel-deal-arrow" class="arrow-up" style="height: 5vh"></div>
+        <div class="card" style="margin-left: 5vw; margin-right: 5vw; border-radius: 30px; background-color: #bd9aab">
+          <div class="row no-gutters" style="padding: 2vw; color: white">
+            <div class="col">
+              <div class="card-body">
+                <h1 class="card-title" style="font-size: 3vw; font-family: 'Righteous', cursive; text-transform: uppercase">Wheel Deal &nbsp;<a href="http://a-wheel-deal.herokuapp.com/"><i style="font-size: 2.7vw; color: white;" class="fas fa-external-link-alt"></i></a></h1>
+                <p class="card-text" style="font-family: 'Roboto'; font-size: 1.1rem;">Text here</p>
+                <p class="card-text text-muted">Created Fall 2019</p>
+              </div>
+            </div>
+            <div class="col">
+              <iframe style="width: 100%; height:475px; overflow: auto;max-width: 100%;" src="https://www.youtube.com/embed/yxqBb4jaiFQ?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <!-- Street Smarts Card -->
+    <div id='street-smarts-card' style='display: none'>
+        <div id="street-smarts-arrow" class="arrow-up" style="height: 5vh"></div>
+        <div class="card" style="margin-left: 5vw; margin-right: 5vw; border-radius: 30px; background-color: #2c3e51">
+          <div class="row no-gutters" style="padding: 2vw; color: white">
+            <div class="col">
+              <div class="card-body">
+                <h1 class="card-title" style="font-size: 3vw; font-family: 'Righteous', cursive; text-transform: uppercase">Street Smarts &nbsp;<a href="https://lrylander.github.io/StreetSmarts/"><i style="font-size: 2.7vw; color: white;" class="fas fa-external-link-alt"></i></a></h1>
+                <p class="card-text" style="font-family: 'Roboto'; font-size: 1.1rem;">StreetSmarts is a series of smart street lights that can be used to map optimal routes emergency responders should through take though a city. When the lamp unit detects motion, it begins listening for voice commands and uses voice recognition to identify if there is an emergency and contact the nearest fire department if there is. At the fire station, a firefighter will accept the request for help and send a team of firefighters to help. After the server runs an algorithm to determine the quickest route to the emergency location, the street lamps along that route light up. This helps the firefighters know where to go, and also alerts drivers along the way that an emergency vehicle will be coming soon so that they can clear the way for the emergency vehicle. In record time, the firefighters can reach the emergency location and save lives.</p>
+                <p class="card-text text-muted">Created January 2018</p>
+              </div>
+            </div>
+            <div class="col">
+              <iframe style="width: 100%; height:475px; overflow: auto;max-width: 100%;" src="https://www.youtube.com/embed/yxqBb4jaiFQ?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <!-- Vulture MIT Card -->
+    <div id='vulture-mit-card' style='display: none'>
+        <div id="vulture-mit-arrow" class="arrow-up" style="height: 5vh"></div>
+        <div class="card" style="margin-left: 5vw; margin-right: 5vw; border-radius: 30px; background-color: #42ce97">
+          <div class="row no-gutters" style="padding: 2vw; color: white">
+            <div class="col">
+              <div class="card-body">
+                <h1 class="card-title" style="font-size: 3vw; font-family: 'Righteous', cursive; text-transform: uppercase">Vulture &nbsp;<a href="http://vulturemit.herokuapp.com/"><i style="font-size: 2.7vw; color: white;" class="fas fa-external-link-alt"></i></a></h1>
+                <p class="card-text" style="font-family: 'Roboto'; font-size: 1.1rem;">Text here
+                <p class="card-text text-muted">Created January 2018</p>
+              </div>
+            </div>
+            <div class="col">
+              <iframe style="width: 100%; height:475px; overflow: auto;max-width: 100%;" src="https://www.youtube.com/embed/yxqBb4jaiFQ?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <!-- SWE MIT Card -->
+    <div id='swe-mit-card' style='display: none'>
+        <div id="swe-mit-arrow" class="arrow-up" style="height: 5vh"></div>
+        <div class="card" style="margin-left: 5vw; margin-right: 5vw; border-radius: 30px; background-color: #aa98bf">
+          <div class="row no-gutters" style="padding: 2vw; color: white">
+            <div class="col">
+              <div class="card-body">
+                <h1 class="card-title" style="font-size: 3vw; font-family: 'Righteous', cursive; text-transform: uppercase">MIT SWE Website &nbsp;<a href="https://swe.mit.edu/"><i style="font-size: 2.7vw; color: white;" class="fas fa-external-link-alt"></i></a></h1>
+                <p class="card-text" style="font-family: 'Roboto'; font-size: 1.1rem;">Swe text</p>
+                <p class="card-text text-muted">Created January 2018</p>
+              </div>
+            </div>
+            <div class="col">
+              <iframe style="width: 100%; height:475px; overflow: auto;max-width: 100%;" src="https://www.youtube.com/embed/yxqBb4jaiFQ?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+
+    
+    <div class="row" style="padding-left: 5vw; padding-right: 5vw;  padding-top: 5vh;">
+        <div class="col">
+            <img src="images/vulture-mit-icon.PNG" style="height:inherit; width:inherit; border-radius: 500px">
+        </div>
+        <div class="col">
+            <img src="images/street-smarts-icon.PNG" style="height:inherit; width:inherit; border-radius: 500px">
+        </div>
+        <div class="col">
+            <img src="images/linnear-icon.PNG" style="height:inherit; width:inherit; border-radius: 500px">
+        </div>
+        <div class="col">
+            <img src="images/swe-mit-icon.PNG" style="height:inherit; width:inherit; border-radius: 500px">
+        </div>
+        <div class="col">
+            <img src="images/wheel-deal-icon.PNG" style="height:inherit; width:inherit; border-radius: 500px">
+        </div>
+    </div>
 </div>
       
     <script>
@@ -135,6 +447,28 @@
         
         window.addEventListener('resize', setHeights);
         window.addEventListener('load', setHeights);
+        
+        
+        
+        function hideAllCardsExcept(id) {
+            var cards = ['linnear-card', 'wheel-deal-card', 'street-smarts-card', 'vulture-mit-card', 'swe-mit-card']
+            for (var i = 0; i < cards.length; i++){
+                if (cards[i] !== id){
+                    document.getElementById(cards[i]).style.display = 'none';
+                }
+            }
+        };
+        
+        function toggleCard(id) {
+            console.log(id)
+            hideAllCardsExcept(id);
+            var card = document.getElementById(id);
+            if (card.style.display === 'none'){
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        };
     </script>
       
       
