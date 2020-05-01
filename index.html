@@ -63,12 +63,11 @@
           height: 0; 
           border-left: 5vw solid transparent;
           border-right: 5vw solid transparent;
-          margin-top: 0.5vh;
         }
         
         #linnear-arrow {
           border-bottom: 4vh solid #a9d562;
-          margin-left: 8.25vw
+          margin-left: 8.25vw;
         }
         
         #wheel-deal-arrow {
@@ -89,15 +88,33 @@
         #swe-mit-arrow {
           border-bottom: 4vh solid #aa98bf;
           margin-left: 82vw;
-        }       
+        }  
+        
+        #slicer-arrow {
+          border-top: 4vh solid #D1722E;
+          margin-left: 8.25vw;
+        }  
+        
+        #play-it-by-gear-arrow {
+          border-top: 4vh solid #56BDCD;
+          margin-left: 26.75vw;
+        }  
+        
+        #fotofix-arrow {
+          border-top: 4vh solid #aa98bf;
+          margin-left: 45vw;
+        }
+        
+        #code-for-good-arrow {
+          border-top: 4vh solid #aa98bf;
+          margin-left: 63.5vw;
+        }
 
         .arrow-down {
           width: 0; 
           height: 0; 
-          border-left: 20px solid transparent;
-          border-right: 20px solid transparent;
-
-          border-top: 20px solid #f00;
+          border-left: 5vw solid transparent;
+          border-right: 5vw solid transparent;
         }
         
         .card{
@@ -271,7 +288,7 @@
       
 <div style="background-color: #967c64; padding-bottom: 10vh;">
     <h1 class="display-4 font-weight-normal" style="padding-left: 5vw; padding-top: 5vh; padding-bottom: 5vh; font-family: 'Righteous', cursive; font-weight: 900; font-size: 4vw; color: #fff; text-transform: uppercase;">Side Projects</h1>
-    <div class="row" style="padding-left: 5vw; padding-right: 5vw;">
+    <div class="row" style="padding-left: 5vw; padding-right: 5vw; padding-bottom: 2.5vh;">
         <div class="col">
             <img src="images/linnear-icon.PNG" style="height:inherit; width:inherit; border-radius: 500px" onclick="toggleCard('linnear-card')">
         </div>
@@ -355,7 +372,7 @@
           <div class="row no-gutters" style="padding: 2vw; color: white">
             <div class="col">
               <div class="card-body">
-                <h1 class="card-title" style="font-size: 3vw; font-family: 'Righteous', cursive; text-transform: uppercase">Vulture &nbsp;<a href="http://vulturemit.herokuapp.com/"><i style="font-size: 2.7vw; color: white;" class="fas fa-external-link-alt"></i></a></h1>
+                <h1 class="card-title" style="font-size: 3vw; font-family: 'Righteous', cursive; text-transform: uppercase">Vulture &nbsp;<a href="https://vulturemit.herokuapp.com/"><i style="font-size: 2.7vw; color: white;" class="fas fa-external-link-alt"></i></a></h1>
                 <p class="card-text" style="font-family: 'Roboto'; font-size: 1.1rem;">Text here
                 <p class="card-text text-muted">Created January 2018</p>
               </div>
@@ -372,34 +389,110 @@
         <div id="swe-mit-arrow" class="arrow-up" style="height: 5vh"></div>
         <div class="card" style="margin-left: 5vw; margin-right: 5vw; border-radius: 30px; background-color: #aa98bf">
           <div class="row no-gutters" style="padding: 2vw; color: white">
-            <div class="col">
+            <div class="col-7">
               <div class="card-body">
                 <h1 class="card-title" style="font-size: 3vw; font-family: 'Righteous', cursive; text-transform: uppercase">MIT SWE Website &nbsp;<a href="https://swe.mit.edu/"><i style="font-size: 2.7vw; color: white;" class="fas fa-external-link-alt"></i></a></h1>
                 <p class="card-text" style="font-family: 'Roboto'; font-size: 1.1rem;">Swe text</p>
                 <p class="card-text text-muted">Created January 2018</p>
               </div>
             </div>
-            <div class="col">
-              <iframe style="width: 100%; height:475px; overflow: auto;max-width: 100%;" src="https://www.youtube.com/embed/yxqBb4jaiFQ?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
-            </div>
+            <div class="col-5">
+              <img src="./images/rt-slicer-photo.PNG" width="100%"/>
           </div>
+        </div>
         </div>
     </div>
     
-
+    <!-- Slicer Card -->
+    <div id='3d-slicer-card' style='display: none'>
+        <div class="card" style="margin-left: 5vw; margin-right: 5vw; border-radius: 30px; background-color: #D1722E">
+          <div class="row no-gutters" style="padding: 2vw; color: white">
+            <div class="col-7">
+              <div class="card-body">
+                <h1 class="card-title" style="font-size: 3vw; font-family: 'Righteous', cursive; text-transform: uppercase"> Real Time Slicer &nbsp;<a href="https://hcie.csail.mit.edu/"><i style="font-size: 2.7vw; color: white;" class="fas fa-external-link-alt"></i></a></h1>
+                <p class="card-text" style="font-family: 'Roboto'; font-size: 1.1rem;">HCIE text</p>
+                <p class="card-text text-muted">Created January 2018</p>
+              </div>
+            </div>
+            <div class="col-5">
+              <img src="./images/rt-slicer-photo.PNG" width="100%"/>
+            </div>
+          </div>
+        </div>
+        <div id="slicer-arrow" class="arrow-down" style="height: 5vh"></div>
+    </div>
     
-    <div class="row" style="padding-left: 5vw; padding-right: 5vw;  padding-top: 5vh;">
+    <!-- Play it by Gear Card -->
+    <div id='play-it-by-gear-card' style='display: none'>
+        <div class="card" style="margin-left: 5vw; margin-right: 5vw; border-radius: 30px; background-color: #56BDCD">
+          <div class="row no-gutters" style="padding: 2vw; color: white">
+            <div class="col-7">
+              <div class="card-body">
+                <h1 class="card-title" style="font-size: 3vw; font-family: 'Righteous', cursive; text-transform: uppercase"> Play It By Gear &nbsp;<a href="https://swe.mit.edu/"><i style="font-size: 2.7vw; color: white;" class="fas fa-external-link-alt"></i></a></h1>
+                <p class="card-text" style="font-family: 'Roboto'; font-size: 1.1rem;">HCIE text</p>
+                <p class="card-text text-muted">Created January 2018</p>
+              </div>
+            </div>
+            <div class="col-5">
+              <img src="./images/rt-slicer-photo.PNG" width="100%"/>
+            </div>
+          </div>
+        </div>
+        <div id="play-it-by-gear-arrow" class="arrow-down" style="height: 5vh"></div>
+    </div>
+ 
+    <!-- Fotofix Card -->
+    <div id='fotofix-card' style='display: none'>
+        <div class="card" style="margin-left: 5vw; margin-right: 5vw; border-radius: 30px; background-color: #aa98bf">
+          <div class="row no-gutters" style="padding: 2vw; color: white">
+            <div class="col-7">
+              <div class="card-body">
+                <h1 class="card-title" style="font-size: 3vw; font-family: 'Righteous', cursive; text-transform: uppercase"> Fotofix &nbsp;<a href="https://swe.mit.edu/"><i style="font-size: 2.7vw; color: white;" class="fas fa-external-link-alt"></i></a></h1>
+                <p class="card-text" style="font-family: 'Roboto'; font-size: 1.1rem;">HCIE text</p>
+                <p class="card-text text-muted">Created January 2018</p>
+              </div>
+            </div>
+            <div class="col-5">
+              <img src="./images/rt-slicer-photo.PNG" width="100%"/>
+            </div>
+          </div>
+        </div>
+        <div id="fotofix-arrow" class="arrow-down" style="height: 5vh"></div>
+    </div>
+  
+    <!-- Code for Good Card -->
+    <div id='code-for-good-card' style='display: none'>
+        <div class="card" style="margin-left: 5vw; margin-right: 5vw; border-radius: 30px; background-color: #aa98bf">
+          <div class="row no-gutters" style="padding: 2vw; color: white">
+            <div class="col-7">
+              <div class="card-body">
+                <h1 class="card-title" style="font-size: 3vw; font-family: 'Righteous', cursive; text-transform: uppercase"> Code For Good &nbsp;<a href="https://swe.mit.edu/"><i style="font-size: 2.7vw; color: white;" class="fas fa-external-link-alt"></i></a></h1>
+                <p class="card-text" style="font-family: 'Roboto'; font-size: 1.1rem;">code for good text</p>
+                <p class="card-text text-muted">Created January 2018</p>
+              </div>
+            </div>
+            <div class="col-5">
+              <img src="./images/rt-slicer-photo.PNG" width="100%"/>
+            </div>
+          </div>
+        </div>
+        <div id="code-for-good-arrow" class="arrow-down" style="height: 5vh"></div>
+    </div>
+    
+    
+    
+    <div class="row" style="padding-left: 5vw; padding-right: 5vw;  padding-top: 2.5vh;">
         <div class="col">
-            <img src="images/vulture-mit-icon.PNG" style="height:inherit; width:inherit; border-radius: 500px">
+            <img src="images/CSAIL.jpg" style="height:inherit; width:inherit; border-radius: 500px" onclick="toggleCard('3d-slicer-card')">
         </div>
         <div class="col">
-            <img src="images/street-smarts-icon.PNG" style="height:inherit; width:inherit; border-radius: 500px">
+            <img src="images/play-it-by-gear-icon-edit.PNG" style="height:inherit; width:inherit; border-radius: 500px" onclick="toggleCard('play-it-by-gear-card')">
         </div>
         <div class="col">
-            <img src="images/linnear-icon.PNG" style="height:inherit; width:inherit; border-radius: 500px">
+            <img src="images/linnear-icon.PNG" style="height:inherit; width:inherit; border-radius: 500px" onclick="toggleCard('fotofix-card')">
         </div>
         <div class="col">
-            <img src="images/swe-mit-icon.PNG" style="height:inherit; width:inherit; border-radius: 500px">
+            <img src="images/swe-mit-icon.PNG" style="height:inherit; width:inherit; border-radius: 500px" onclick="toggleCard('code-for-good-card')">
         </div>
         <div class="col">
             <img src="images/wheel-deal-icon.PNG" style="height:inherit; width:inherit; border-radius: 500px">
@@ -451,7 +544,7 @@
         
         
         function hideAllCardsExcept(id) {
-            var cards = ['linnear-card', 'wheel-deal-card', 'street-smarts-card', 'vulture-mit-card', 'swe-mit-card']
+            var cards = ['linnear-card', 'wheel-deal-card', 'street-smarts-card', 'vulture-mit-card', 'swe-mit-card', '3d-slicer-card', 'play-it-by-gear-card', 'fotofix-card', 'code-for-good-card']
             for (var i = 0; i < cards.length; i++){
                 if (cards[i] !== id){
                     document.getElementById(cards[i]).style.display = 'none';
