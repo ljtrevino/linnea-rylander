@@ -17,23 +17,32 @@
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/stars.css" />
+    <link rel="stylesheet" type="text/css" href="css/slider.css" />
       
       
     <title>Linnea Rylander</title>
   </head>
   <body>
- 
-    <div id="intro" class="day-intro position-relative overflow-hidden text-center" onmouseover="onHoverOutRoom(this)" onclick="toggleDarkMode()">
-  <div class="col-md-12 p-lg-5 mx-auto my-5" style="z-index: 3;">
-    <h1 class="display-4 font-weight-normal" style="font-family: 'Righteous', cursive; font-weight: 900; font-size: 6vw; text-transform: uppercase; margin-bottom: 0;">Linnea Rylander</h1>
-    <h2 class="lead font-weight-normal" style="font-family: 'Righteous', cursive; font-weight: 900; font-size: 2.5vw; text-transform: uppercase; margin-bottom: 4vh">DEVELOPER • DESIGNER • ENGINEER</h2>
       
-    <a id="github-icon" class="intro-btn intro-btn-light" href="https://github.com/lrylander"><i style="font-size: 5vw" class="fab fa-github-square"></i></a>
-    <a id="linkedin-icon" class="intro-btn intro-btn-light" href="https://www.linkedin.com/in/linnearylander"><i style="font-size: 5vw" class="fab fa-linkedin"></i></a>
-    <a id="envelope-icon" class="intro-btn intro-btn-light" href="mailto:linnearylander@gmail.com"><i style="font-size: 5vw" class="fas fa-envelope-square"></i></a>
-    <a id="resume-icon" class="intro-btn intro-btn-light" href="Linnea_Rylander_Resume.pdf"><i style="font-size: 4.3vw" class="fas fa-file-alt"></i></a>
 
-  </div>
+      
+ 
+    <div id="intro" class="day-intro position-relative overflow-hidden text-center" onmouseover="onHoverOutRoom(this)">
+        
+            <div id="wrap" class="switcher-wrap" style="z-index: 3">
+                <div id="sunMoon" class="sun-moon"> </div>
+            </div>
+        
+      <div class="col-md-12 p-lg-5 mx-auto my-5" style="z-index: 3;">
+        <h1 class="display-4 font-weight-normal" style="font-family: 'Righteous', cursive; font-weight: 900; font-size: 6vw; text-transform: uppercase; margin-bottom: 0;">Linnea Rylander</h1>
+        <h2 class="lead font-weight-normal" style="font-family: 'Righteous', cursive; font-weight: 900; font-size: 2.5vw; text-transform: uppercase; margin-bottom: 4vh">DEVELOPER • DESIGNER • ENGINEER</h2>
+
+        <a id="github-icon" class="intro-btn intro-btn-light" href="https://github.com/lrylander"><i style="font-size: 5vw" class="fab fa-github-square"></i></a>
+        <a id="linkedin-icon" class="intro-btn intro-btn-light" href="https://www.linkedin.com/in/linnearylander"><i style="font-size: 5vw" class="fab fa-linkedin"></i></a>
+        <a id="envelope-icon" class="intro-btn intro-btn-light" href="mailto:linnearylander@gmail.com"><i style="font-size: 5vw" class="fas fa-envelope-square"></i></a>
+        <a id="resume-icon" class="intro-btn intro-btn-light" href="Linnea_Rylander_Resume.pdf"><i style="font-size: 4.3vw" class="fas fa-file-alt"></i></a>
+
+      </div>
 </div>  
       
 
@@ -386,7 +395,11 @@
         };
         
         
-        function toggleDarkMode() {
+        const sunMoon = document.getElementById('sunMoon');
+        const wrap = document.getElementById('wrap');
+        
+        sunMoon.onclick = () => {
+            
             dark_mode = !dark_mode
 
             if (dark_mode){
@@ -401,6 +414,10 @@
                     document.getElementById(i).className = document.getElementById(i).className.replace("intro-btn-light", "intro-btn-dark");
                 }
                 
+                sunMoon.style.left = '6.5vw';
+                sunMoon.className = 'sun-moon moon';
+                wrap.className = 'switcher-wrap wrap-moon';
+                
             } else {
                 // day mode
                 document.getElementById("building").setAttribute("src", "images/building/building-day.png");
@@ -413,8 +430,15 @@
                     document.getElementById(i).className = document.getElementById(i).className.replace("intro-btn-dark", "intro-btn-light");
                 }
                 
+                sunMoon.style.left = '0';
+                sunMoon.className = 'sun-moon sun';
+                wrap.className = 'switcher-wrap wrap-sun';
             }
         };
+        
+        sunMoon.className = 'sun-moon sun' ;
+        wrap.className = 'switcher-wrap wrap-sun';
+        
     </script>
       
       
