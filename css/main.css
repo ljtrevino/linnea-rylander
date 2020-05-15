@@ -33,10 +33,12 @@ html, body {
         } 
         .areastars {
             position: absolute;
-            z-index: 1;
-            top: 3.6vw;
+            top: 0vw;
             height:144.45vw;
             width:100%;
+        } 
+        .areastars-off {
+            visibility: hidden;
         } 
         #arealeft {
             top: 3.6vw;
