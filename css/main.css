@@ -1,0 +1,259 @@
+html, body {
+            overflow-x: hidden;
+        }
+        
+        #building{
+            position: relative;
+        }
+        
+        .area {
+            background:#000;
+            display:block;
+            height:28.89vw;
+            opacity:0;
+            position:absolute;
+            width:41.4vw;
+            left:29.7vw;
+            padding: 0em;
+        }
+        #area1 {
+            top: 3.6vw;
+        }
+        #area2 {
+            top: 32.49vw;
+        }
+        #area3 {
+            top: 61.38vw;
+        }
+        #area4 {
+            top: 90.27vw;
+        }
+        #area5 {
+            top: 119.16vw;
+        } 
+        .areastars {
+            position: absolute;
+            z-index: 1;
+            top: 3.6vw;
+            height:144.45vw;
+            width:100%;
+        } 
+        #arealeft {
+            top: 3.6vw;
+            height:144.45vw;
+            background: #666666;
+            width:29.7vw;
+            left: 0vw;
+        } 
+        #arearight {
+            top: 3.6vw;
+            height:144.45vw;
+            background: #666666;
+            width:29.7vw;
+            left: 71.1vw;
+        } 
+        .intro-btn{
+            margin-top: 0.375rem;
+            margin-right: 0.75rem;
+            margin-bottom: 0.375rem;
+            margin-left: 0.75rem;
+            vertical-align: middle;
+        }
+        .intro-btn-dark{
+            color: #eeeeee;
+        }
+        .intro-btn-light{
+            color: #525252;
+        }
+        .intro-btn:focus {
+            border: none;
+            outline: none;
+        }
+        .intro-btn:hover {
+            color: #666767;
+        }
+        
+        .day-intro {
+            background-color: #C6DFDF;
+            color: #525252;
+        }
+        .night-intro {
+            background: rgb(1,41,63);
+            background-image: radial-gradient(bottom, ellipse cover, #01334E 0%,rgb(1,41,63) 90%);
+            background-image: radial-gradient(ellipse at bottom, #01334E 0%, rgb(1,41,63) 90%);
+            background-image: radial-gradient(bottom, ellipse, #01334E 0%, rgb(1,41,63) 90%);
+            background-image: radial-gradient(ellipse at bottom,  #01334E 0%,rgb(1,41,63) 90%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#094c72', endColorstr='#01293f',GradientType=1 );
+            color: #dddddd;
+        }      
+        
+        .day-sky {
+            background: repeating-linear-gradient(#C6DFDF, #C6DFDF 94.99%, #bee07e 95.01%, #bee07e 97.99%, #a5a7a7 98.01%, #a5a7a7 100%);
+        }
+        
+        .night-sky {
+            background-image: repeating-linear-gradient(rgba(255,0,0,0), rgba(255,0,0,0) 94.99%, #bee07e 95.01%, #bee07e 97.99%, #a5a7a7 98.01%, #a5a7a7 100%);
+        }
+        
+        .outer-night-sky{
+            background: rgb(9,76,114);
+            background-image: radial-gradient(bottom, ellipse cover,  rgb(9,76,114) 0%,rgb(1,41,63) 100%);
+            background-image: radial-gradient(ellipse at bottom, rgb(9,76,114) 0%, rgb(1,41,63) 100%);
+            background-image: radial-gradient(bottom, ellipse, rgb(9,76,114) 0%, rgb(1,41,63) 100%);
+            background-image: radial-gradient(ellipse at bottom,  rgb(9,76,114) 0%,rgb(1,41,63) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#094c72', endColorstr='#01293f',GradientType=1 );
+        }
+        
+        
+        .arrow-up {
+          width: 0; 
+          height: 0; 
+          border-left: 5vw solid transparent;
+          border-right: 5vw solid transparent;
+        }
+        
+        #linnear-arrow {
+          border-bottom: 4vh solid #a9d562;
+          margin-left: 8.25vw;
+        }
+        
+        #wheel-deal-arrow {
+          border-bottom: 4vh solid #bd9aab;
+          margin-left: 26.75vw;
+        }
+        
+        #street-smarts-arrow {
+          border-bottom: 4vh solid #2c3e51;
+          margin-left: 45vw;
+        }
+        
+        #vulture-mit-arrow {
+          border-bottom: 4vh solid #42ce97;
+          margin-left: 63.5vw;
+        }
+        
+        #swe-mit-arrow {
+          border-bottom: 4vh solid #aa98bf;
+          margin-left: 82vw;
+        }  
+        
+        #slicer-arrow {
+          border-top: 4vh solid #D1722E;
+          margin-left: 8.25vw;
+        }  
+        
+        #play-it-by-gear-arrow {
+          border-top: 4vh solid #56BDCD;
+          margin-left: 26.75vw;
+        }  
+        
+        #fotofix-arrow {
+          border-top: 4vh solid #a1baca;
+          margin-left: 45vw;
+        }
+        
+        #code-for-good-arrow {
+          border-top: 4vh solid #aa98bf;
+          margin-left: 63.5vw;
+        }
+
+        .arrow-down {
+          width: 0; 
+          height: 0; 
+          border-left: 5vw solid transparent;
+          border-right: 5vw solid transparent;
+        }
+        
+        .card{
+            border: none;
+        }
+        
+        
+        .cl1 {
+          width: 5vw;
+          height: 5vw;
+          border-radius: 50%;
+          background: #fff;
+          position: absolute;
+
+        }
+
+        .cl2 {
+          width: 10vw;
+          height: 10vw;
+          border-radius: 50%;
+          position: absolute;
+          top: -5vw;
+          left: 2.5vw;
+          background: #fff;
+        }
+
+        .cl3 {
+          width: 7.5vw;
+          height: 7.5vw;
+          border-radius: 50%;
+          position: absolute;
+          top: -2.5vw;
+          left: 10vw;
+          background: #fff;
+        }
+
+        .cl4 {
+          width: 11vw;
+          height: 1.5vw;
+          background: #fff;
+          position: absolute;
+          left: 2.5vw;
+          top: 3.5vw;
+        }
+        
+        .cloud1 {
+          top: -30vw;
+          position: relative;
+          opacity: 60%;
+          animation: slide 40s linear infinite;
+        }
+
+        .cloud2 {
+          top: -10vw;
+          position: relative;
+          opacity: 40%;
+          animation: slide 30s linear infinite;
+        }
+        
+        .cloud3 {
+          top: 5vw;
+          position: relative;
+          opacity: 30%;
+          animation: slide-reverse 20s linear infinite;
+        }
+        
+        #blue-car {
+          position: relative;
+          top: -8vw;
+          animation: slide-reverse 8s linear infinite;
+        }
+        
+        #orange-car {
+          position: absolute;
+          top: -8vw;
+          animation: slide 10s linear infinite;
+        }
+        
+        @keyframes slide {
+          from {
+            transform: translateX(-35vw);
+          }
+          to {
+            transform: translateX(135vw);
+          }
+        }
+        
+        @keyframes slide-reverse {
+          from {
+            transform: translateX(135vw);
+          }
+          to {
+            transform: translateX(-35vw);
+          }
+        }
