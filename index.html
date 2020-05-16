@@ -33,7 +33,7 @@
                 <div id="sunMoon" class="sun-moon"> </div>
             </div>
         
-      <div class="col-md-12 p-lg-5 mx-auto my-5" style="z-index: 3;">
+      <div class="col-md-12 pb-lg-5 mx-auto my-5" style="z-index: 3;">
         <h1 class="display-4 font-weight-normal" style="font-family: 'Righteous', cursive; font-weight: 900; font-size: 6vw; text-transform: uppercase; margin-bottom: 0;">Linnea Rylander</h1>
         <h2 class="lead font-weight-normal" style="font-family: 'Righteous', cursive; font-weight: 900; font-size: 2.5vw; text-transform: uppercase; margin-bottom: 4vh">DEVELOPER • DESIGNER • ENGINEER</h2>
 
@@ -98,18 +98,16 @@
       
 <div style="z-index: 3;">    
     
-<div style="background-color: #a5a7a7; height: 5vw;" onmouseover="onHoverOutRoom(this)">
+<div id="road" class="road-light" style="height: 5vw;" onmouseover="onHoverOutRoom(this)">
     <img id="blue-car" src="images/blue-car.PNG" style="width: 20vw; position: relative; z-index: 2;">
 </div>
-<div style="background-color: #a5a7a7; height: 5vw;" onmouseover="onHoverOutRoom(this)">
+<div id="road2" class="road-light" style="height: 5vw;" onmouseover="onHoverOutRoom(this)">
     <img id="orange-car" src="images/orange-car.PNG" style="width: 20vw; position: relative; z-index: 2;">
 </div>
       
+<div id="grass" class="grass-light" style="height: 10vh;"></div>
       
-<div class="position-relative overflow-hidden text-center" style="background-color: #bee07e; height: 10vh;">
-</div>
-      
-<div style="background-color: #967c64; padding-bottom: 10vh;">
+<div id="dirt" class="dirt-light" style="padding-bottom: 10vh;">
     <h1 class="display-4 font-weight-normal" style="padding-left: 5vw; padding-top: 5vh; padding-bottom: 5vh; font-family: 'Righteous', cursive; font-weight: 900; font-size: 4vw; color: #fff; text-transform: uppercase;">Side Projects</h1>
     <div class="row" style="padding-left: 5vw; padding-right: 5vw; padding-bottom: 2.5vh;">
         <div class="col">
@@ -176,15 +174,16 @@
         <div id="street-smarts-arrow" class="arrow-up" style="height: 5vh"></div>
         <div class="card" style="margin-left: 5vw; margin-right: 5vw; border-radius: 30px; background-color: #2c3e51">
           <div class="row no-gutters" style="padding: 2vw; color: white">
-            <div class="col">
+            <div class="col-6">
               <div class="card-body">
                 <h1 class="card-title" style="font-size: 3vw; font-family: 'Righteous', cursive; text-transform: uppercase">Street Smarts &nbsp;<a href="https://lrylander.github.io/StreetSmarts/"><i style="font-size: 2.7vw; color: white;" class="fas fa-external-link-alt"></i></a></h1>
                 <p class="card-text" style="font-family: 'Roboto'; font-size: 1.1rem;">StreetSmarts is a series of smart street lights that can be used to map optimal routes emergency responders should through take though a city. When the lamp unit detects motion, it begins listening for voice commands and uses voice recognition to identify if there is an emergency and contact the nearest fire department if there is. At the fire station, a firefighter will accept the request for help and send a team of firefighters to help. After the server runs an algorithm to determine the quickest route to the emergency location, the street lamps along that route light up. This helps the firefighters know where to go, and also alerts drivers along the way that an emergency vehicle will be coming soon so that they can clear the way for the emergency vehicle. In record time, the firefighters can reach the emergency location and save lives.</p>
                 <p class="card-text text-muted">Created Spring 2018</p>
               </div>
             </div>
-            <div class="col">
-              <iframe style="width: 100%; height:475px; overflow: auto;max-width: 100%;" src="https://www.youtube.com/embed/yxqBb4jaiFQ?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+            <div class="col-6">
+                <iframe width='100%' height='478px' src="https://www.youtube.com/embed/yxqBb4jaiFQ?&theme=dark&autohide=2&modestbranding=1&showinfo=0&rel=0&iv_load_policy=3" frameborder="0"></iframe>
+<!--              <iframe style="width: 100%; height:475px; overflow: auto;max-width: 100%;" src="https://www.youtube.com/embed/yxqBb4jaiFQ?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>-->
             </div>
           </div>
         </div>
@@ -233,14 +232,14 @@
     <div id='3d-slicer-card' style='display: none'>
         <div class="card" style="margin-left: 5vw; margin-right: 5vw; border-radius: 30px; background-color: #D1722E">
           <div class="row no-gutters" style="padding: 2vw; color: white">
-            <div class="col-7">
+            <div class="col">
               <div class="card-body">
                 <h1 class="card-title" style="font-size: 3vw; font-family: 'Righteous', cursive; text-transform: uppercase"> Real Time Slicer &nbsp;<a href="https://hcie.csail.mit.edu/"><i style="font-size: 2.7vw; color: white;" class="fas fa-external-link-alt"></i></a></h1>
                 <p class="card-text" style="font-family: 'Roboto'; font-size: 1.1rem;">HCIE text</p>
                 <p class="card-text text-muted">Created Spring 2019</p>
               </div>
             </div>
-            <div class="col-5">
+            <div class="col">
               <img src="./images/rt-slicer-photo.PNG" width="100%"/>
             </div>
           </div>
@@ -288,7 +287,7 @@
   
     <!-- Code for Good Card -->
     <div id='code-for-good-card' style='display: none'>
-        <div class="card" style="margin-left: 5vw; margin-right: 5vw; border-radius: 30px; background-color: #aa98bf">
+        <div class="card" style="margin-left: 5vw; margin-right: 5vw; border-radius: 30px; background-color: #9acfdd">
           <div class="row no-gutters" style="padding: 2vw; color: white">
             <div class="col-6">
               <div class="card-body">
@@ -408,7 +407,12 @@
                 document.getElementById("intro").className = document.getElementById("intro").className.replace("day-intro", "night-intro");
                 document.getElementById("sky").className = document.getElementById("sky").className.replace("day-sky", "night-sky");
                 document.getElementById("outer-sky").className = "outer-night-sky";
-                document.getElementById("stars-container").className = "areastars";
+                document.getElementById("stars-container").className = "areastars";       
+                
+                document.getElementById("road").className = "road-dark";
+                document.getElementById("road2").className = "road-dark";
+                document.getElementById("grass").className = "grass-dark";
+                document.getElementById("dirt").className = "dirt-dark";
 
                 for(let i of icons){
                     document.getElementById(i).className = document.getElementById(i).className.replace("intro-btn-light", "intro-btn-dark");
@@ -425,6 +429,11 @@
                 document.getElementById("sky").className = document.getElementById("sky").className.replace("night-sky", "day-sky");
                 document.getElementById("outer-sky").className = "";
                 document.getElementById("stars-container").className = "areastars-off";
+                
+                document.getElementById("road").className = "road-light";
+                document.getElementById("road2").className = "road-light";
+                document.getElementById("grass").className = "grass-light";
+                document.getElementById("dirt").className = "dirt-light";
                 
                 for(let i of icons){
                     document.getElementById(i).className = document.getElementById(i).className.replace("intro-btn-dark", "intro-btn-light");

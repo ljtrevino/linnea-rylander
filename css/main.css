@@ -94,9 +94,33 @@ html, body {
         }
         
         .night-sky {
-            background-image: repeating-linear-gradient(rgba(255,0,0,0), rgba(255,0,0,0) 94.99%, #bee07e 95.01%, #bee07e 97.99%, #a5a7a7 98.01%, #a5a7a7 100%);
+            background-image: repeating-linear-gradient(rgba(255,0,0,0), rgba(255,0,0,0) 94.99%, #7eab29 95.01%, #7eab29 97.99%, #7d8080 98.01%, #7d8080 100%);
         }
-        
+
+        .road-dark{
+            background-color: #7d8080;
+        }
+
+        .road-light{
+            background-color: #a5a7a7;
+        }
+
+        .grass-dark{
+            background-color: #7eab29;
+        }
+
+        .grass-light{
+            background-color: #bee07e;
+        }
+
+        .dirt-light{
+            background-color: #967c64;
+        }
+
+        .dirt-dark{
+            background-color: #8a725c;
+        }
+                
         .outer-night-sky{
             background: rgb(9,76,114);
             background-image: radial-gradient(bottom, ellipse cover,  rgb(9,76,114) 0%,rgb(1,41,63) 100%);
@@ -155,7 +179,7 @@ html, body {
         }
         
         #code-for-good-arrow {
-          border-top: 4vh solid #aa98bf;
+          border-top: 4vh solid #9acfdd;
           margin-left: 63.5vw;
         }
 
