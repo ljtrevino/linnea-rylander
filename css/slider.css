@@ -5,6 +5,7 @@
     height: 5vw;
     border-radius: 3vw;
     left: 87.5vw;
+    z-index: 3;
 }
 
 .wrap-sun {
