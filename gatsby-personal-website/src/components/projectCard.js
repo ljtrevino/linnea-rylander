@@ -16,10 +16,10 @@ class ProjectCard extends Component {
                 </div>
               </div>
               <div className="col">
-              { this.props.video ?
-                <iframe class="card-iframe" src={this.props.video} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
-                : <img className="card-image-border" src={"./images/" + this.props.name + "-screenshot.PNG"}/>
-              }
+                { this.props.video ?
+                  <iframe class="card-iframe" src={this.props.video} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+                  : <img className="card-image-border" src={"./images/" + this.props.name + "-screenshot.PNG"}/>
+                }
               </div>
             </div>
           </div>
