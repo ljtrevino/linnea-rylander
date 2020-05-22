@@ -28,8 +28,8 @@
 
   <div id="intro" class="day-intro position-relative overflow-hidden text-center" onmouseover="onHoverOutRoom(this)">
 
-    <div id="wrap" class="switcher-wrap">
-      <div id="sunMoon" class="sun-moon"> </div>
+    <div id="wrap" class="switcher-wrap wrap-sun">
+      <div id="sunMoon" class="sun-moon sun"> </div>
     </div>
 
     <div id="intro-header" class="col-md-12 pb-lg-5 mx-auto my-5">
@@ -448,17 +448,15 @@
       window.addEventListener('resize', setHeights);
       window.addEventListener('load', setHeights);
 
-      function hideAllCardsExcept(id) {
-        var cards = ['linnear-card', 'wheel-deal-card', 'street-smarts-card', 'vulture-mit-card', 'swe-mit-card', '3d-slicer-card', 'play-it-by-gear-card', 'fotofix-card', 'code-for-good-card']
+
+      var cards = ['linnear-card', 'wheel-deal-card', 'street-smarts-card', 'vulture-mit-card', 'swe-mit-card', '3d-slicer-card', 'play-it-by-gear-card', 'fotofix-card', 'code-for-good-card']
+
+      function toggleCard(id) {
         for (var i = 0; i < cards.length; i++) {
           if (cards[i] !== id) {
             document.getElementById(cards[i]).style.display = 'none';
           }
         }
-      };
-
-      function toggleCard(id) {
-        hideAllCardsExcept(id);
         var card = document.getElementById(id);
         if (card.style.display === 'none') {
           card.style.display = 'block';
@@ -469,8 +467,6 @@
 
       const sunMoon = document.getElementById('sunMoon');
       const wrap = document.getElementById('wrap');
-      sunMoon.className = 'sun-moon sun';
-      wrap.className = 'switcher-wrap wrap-sun';
 
       sunMoon.onclick = () => {
 

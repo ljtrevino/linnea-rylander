@@ -214,7 +214,7 @@ html, body {
         }
 
         .linnear-color {
-          background-color: #a9d562;
+          background-color: #a9d562 !important;
         }
 
         #wheel-deal-arrow {
@@ -223,7 +223,7 @@ html, body {
         }
 
         .wheel-deal-color {
-          background-color: #bd9aab;
+          background-color: #bd9aab !important;
         }
 
         #street-smarts-arrow {
@@ -232,7 +232,7 @@ html, body {
         }
 
         .street-smarts-color {
-          background-color: #2c3e51;
+          background-color: #2c3e51 !important;
         }
 
         #vulture-mit-arrow {
@@ -241,7 +241,7 @@ html, body {
         }
 
         .vulture-mit-color {
-          background-color: #42ce97;
+          background-color: #42ce97 !important;
         }
 
         #swe-mit-arrow {
@@ -250,7 +250,7 @@ html, body {
         }
 
         .swe-mit-color {
-          background-color: #aa98bf;
+          background-color: #aa98bf !important;
         }
 
         #slicer-arrow {
@@ -259,7 +259,7 @@ html, body {
         }
 
         .slicer-color {
-          background-color: #D1722E;
+          background-color: #D1722E !important;
         }
 
         #play-it-by-gear-arrow {
@@ -268,7 +268,7 @@ html, body {
         }
 
         .play-it-by-gear-color {
-          background-color: #56BDCD;
+          background-color: #56BDCD !important;
         }
 
         #fotofix-arrow {
@@ -277,7 +277,7 @@ html, body {
         }
 
         .fotofix-color {
-          background-color: #a1baca;
+          background-color: #a1baca !important;
         }
 
         #code-for-good-arrow {
@@ -286,7 +286,7 @@ html, body {
         }
 
         .code-for-good-color {
-          background-color: #9acfdd;
+          background-color: #9acfdd !important;
         }
 
         .arrow-down {
@@ -297,10 +297,10 @@ html, body {
         }
 
         .card{
-            border: none;
-            margin-left: 5vw;
-            margin-right: 5vw;
-            border-radius: 30px;
+            border: none !important;
+            margin-left: 5vw !important;
+            margin-right: 5vw !important;
+            border-radius: 30px !important;
         }
 
         .card-title{
