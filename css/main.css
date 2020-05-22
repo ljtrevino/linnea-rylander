@@ -15,7 +15,7 @@ html, body {
 
         .title{
           font-family: 'Righteous', cursive;
-          font-weight: 900;
+          font-weight: 400;
           font-size: 6vw;
           text-transform: uppercase;
           margin-bottom: 0;
@@ -23,7 +23,7 @@ html, body {
 
         .subtitle{
           font-family: 'Righteous', cursive;
-          font-weight: 900;
+          font-weight: 400;
           font-size: 2.5vw;
           text-transform: uppercase;
           margin-bottom: 4vh;

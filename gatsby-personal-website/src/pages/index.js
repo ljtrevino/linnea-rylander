@@ -38,8 +38,8 @@ export default function Home() {
       </div>
 
       <div id="intro-header" class="col-md-12 pb-lg-5 mx-auto my-5">
-        <h1 class="title display-4 font-weight-normal">Linnea Rylander</h1>
-        <h2 class="subtitle lead font-weight-normal">DEVELOPER • DESIGNER • ENGINEER</h2>
+        <h1 class="title">Linnea Rylander</h1>
+        <h2 class="subtitle">DEVELOPER • DESIGNER • ENGINEER</h2>
 
         <a id="github-icon" class="intro-btn intro-btn-light" href="https://github.com/lrylander"><i class="icon fab fa-github-square"></i></a>
         <a id="linkedin-icon" class="intro-btn intro-btn-light" href="https://www.linkedin.com/in/linnearylander"><i class="icon fab fa-linkedin"></i></a>
@@ -152,7 +152,7 @@ export default function Home() {
                 </div>
               </div>
               <div class="col">
-                <img class="card-image-border" src="../images/linnear-screenshot.PNG"/>
+                <img class="card-image-border" src="./images/linnear-screenshot.PNG"/>
               </div>
             </div>
           </div>
@@ -181,7 +181,7 @@ export default function Home() {
                 </div>
               </div>
               <div class="col">
-                <img class="card-image-border" src="../images/wheel-deal-screenshot.PNG" />
+                <img class="card-image-border" src="./images/wheel-deal-screenshot.PNG" />
               </div>
             </div>
           </div>
@@ -238,7 +238,7 @@ export default function Home() {
                 </div>
               </div>
               <div class="col">
-                <img class="card-image-border" src="../images/vulture-screenshot.PNG"/>
+                <img class="card-image-border" src="./images/vulture-screenshot.PNG"/>
               </div>
             </div>
           </div>
@@ -265,7 +265,7 @@ export default function Home() {
                 </div>
               </div>
               <div class="col-6">
-                <img class="card-image-border" src="../images/swe-screenshot.PNG"/>
+                <img class="card-image-border" src="./images/swe-screenshot.PNG"/>
               </div>
             </div>
           </div>
@@ -291,7 +291,7 @@ export default function Home() {
                 </div>
               </div>
               <div class="col">
-                <img class="card-image" src="../images/rt-slicer-photo.PNG" />
+                <img class="card-image" src="./images/rt-slicer-photo.PNG" />
               </div>
             </div>
           </div>
@@ -381,7 +381,7 @@ export default function Home() {
                 </div>
               </div>
               <div class="col-6">
-                <img class="card-image-border" src="../images/afh-screenshot.PNG"/>
+                <img class="card-image-border" src="./images/afh-screenshot.PNG"/>
               </div>
             </div>
           </div>
