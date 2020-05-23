@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ProjectCard from "../components/projectCard"
+import ProjectIcon from "../components/projectIcon"
 
 class Ground extends Component {
 
@@ -25,23 +26,15 @@ class Ground extends Component {
         <div id="grass" className="grass-light"></div>
 
         <div id="dirt" className="dirt-light">
+
           <h1 className="subsubtitle display-4 font-weight-normal">Side Projects</h1>
+
           <div className="project-icon-container row">
-            <div className="col">
-              <img className="project-icon" src="images/linnear-icon.PNG" onClick="toggleCard('linnear-card')"/>
-            </div>
-            <div className="col">
-              <img className="project-icon" src="images/wheel-deal-icon.PNG" onClick="toggleCard('wheel-deal-card')"/>
-            </div>
-            <div className="col">
-              <img className="project-icon" src="images/street-smarts-icon.PNG" onClick="toggleCard('street-smarts-card')"/>
-            </div>
-            <div className="col">
-              <img className="project-icon" src="images/vulture-mit-icon.PNG" onClick="toggleCard('vulture-mit-card')"/>
-            </div>
-            <div className="col">
-              <img className="project-icon" src="images/swe-mit-icon.PNG" onClick="toggleCard('swe-mit-card')"/>
-            </div>
+            <ProjectIcon name="linnear"/>
+            <ProjectIcon name="wheel-deal"/>
+            <ProjectIcon name="street-smarts"/>
+            <ProjectIcon name="vulture-mit"/>
+            <ProjectIcon name="swe-mit"/>
           </div>
 
           <ProjectCard name="linnear" arrow="up" title="Linnear" link="https://linnear.info/">
@@ -170,25 +163,15 @@ class Ground extends Component {
           </ProjectCard>
 
 
-
-
           <div className="project-icon-container row">
-            <div className="col">
-              <img src="images/CSAIL.png" className="project-icon" onClick="toggleCard('3d-slicer-card')"/>
-            </div>
-            <div className="col">
-              <img src="images/play-it-by-gear-icon-edit.PNG" className="project-icon" onClick="toggleCard('play-it-by-gear-card')"/>
-            </div>
-            <div className="col">
-              <img src="images/fotofix.JPG" className="project-icon" onClick="toggleCard('fotofix-card')"/>
-            </div>
-            <div className="col">
-              <img src="images/code-for-good-logo.png" className="project-icon" onClick="toggleCard('code-for-good-card')"/>
-            </div>
-            <div className="col">
-              <img src="images/wheel-deal-icon.PNG" className="project-icon"/>
-            </div>
+              <ProjectIcon name="slicer"/>
+              <ProjectIcon name="play-it-by-gear"/>
+              <ProjectIcon name="fotofix"/>
+              <ProjectIcon name="code-for-good"/>
+              <ProjectIcon name="wheel-deal"/>
           </div>
+
+
         </div>
       </>
     )
