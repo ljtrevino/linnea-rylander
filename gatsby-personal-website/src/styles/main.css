@@ -2,6 +2,10 @@ html, body {
             overflow-x: hidden;
         }
 
+        div {
+          white-space: pre-wrap;
+        }
+
         #building{
             position: relative;
             width: 60vw;
@@ -196,9 +200,9 @@ html, body {
           border-radius: 500px;
         }
 
-        .project-card{
+        /* .project-card{
           display: none;
-        }
+        } */
 
 
         .arrow-up {
@@ -306,7 +310,7 @@ html, body {
         .card-title{
           font-size: 3vw;
           font-family: 'Righteous', cursive;
-          text-transform: uppercase
+          text-transform: uppercase;
         }
 
         .card-text{
