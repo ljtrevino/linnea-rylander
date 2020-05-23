@@ -162,7 +162,6 @@ class Ground extends Component {
               <p className="card-text text-muted">Created Spring 2018</p>
           </ProjectCard>
 
-
           <div className="project-icon-container row">
               <ProjectIcon name="slicer"/>
               <ProjectIcon name="play-it-by-gear"/>
@@ -170,7 +169,6 @@ class Ground extends Component {
               <ProjectIcon name="code-for-good"/>
               <ProjectIcon name="wheel-deal"/>
           </div>
-
 
         </div>
       </>
