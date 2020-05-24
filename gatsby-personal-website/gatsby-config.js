@@ -82,6 +82,31 @@ module.exports = {
         name: `slicer`,
         link: `http://google.com`,
       },
-    ]
+    ],
+    buildings: [
+      'images/building/building-day.png', 'images/building/Facebook.png', 'images/building/Messenger.png', 'images/building/Twitch.png', 'images/building/McKinsey.png', 'images/building/MIT.png'
+    ],
+    socialIcons:[
+      {
+        type: 'github',
+        icon: 'icon fab fa-github-square',
+        link: 'https://github.com/lrylander',
+      },
+      {
+        type: 'linkedin',
+        icon: 'icon fab fa-linkedin',
+        link: 'https://www.linkedin.com/in/linnearylander',
+      },
+      {
+        type: 'envelope',
+        icon: 'icon fas fa-envelope-square',
+        link: 'mailto:linnearylander@gmail.com',
+      },
+      {
+        type: 'resume',
+        icon: 'icon-rect fas fa-file-alt',
+        link: 'Linnea_Rylander_Resume.pdf',
+      },
+    ],
   },
 }

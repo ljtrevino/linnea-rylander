@@ -1,14 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class ProjectCard extends Component {
-
-  render() {
+export default function ProjectCard(props) {
     return (
       <div className="col">
-        <img src={"./images/" + this.props.name + "-icon.png"} className="project-icon" onClick={this.props.onClick}/>
+        <img src={"./images/" + props.name + "-icon.png"} className="project-icon" onClick={props.onClick}/>
       </div>
     )
-  }
 }
-
-export default ProjectCard;

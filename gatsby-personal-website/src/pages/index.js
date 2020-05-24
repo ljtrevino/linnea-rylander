@@ -5,7 +5,6 @@ import "../styles/main.css"
 import "../styles/slider.css"
 import "../styles/stars.css"
 
-import Intro from "../components/intro"
 import Building from "../components/building"
 import Ground from "../components/ground"
 
@@ -34,7 +33,6 @@ export default function Home() {
         <title>Linnea Rylander</title>
       </Helmet>
 
-      <Intro/>
       <Building/>
       <Ground/>
     </>

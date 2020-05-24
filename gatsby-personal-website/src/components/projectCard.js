@@ -1,37 +1,32 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class ProjectCard extends Component {
-
-  render() {
+export default function ProjectCard(props) {
     return (
-        <div id={this.props.name + '-card'} className="project-card">
-          {this.props.arrow === 'up' ? <div id={this.props.name + "-arrow"} className={"arrow-" + this.props.arrow}></div> : <></>}
-          <div className={this.props.name + "-color card"}>
+        <div id={props.name + '-card'} className="project-card">
+          {props.arrow === 'up' ? <div id={props.name + "-arrow"} className={"arrow-" + props.arrow}></div> : <></>}
+          <div className={props.name + "-color card"}>
             <div className="card-row row no-gutters">
               <div className="col">
                 <div className="card-body">
-                  <h1 className="card-title">{this.props.title} &nbsp;<a href={this.props.link}><i
+                  <h1 className="card-title">{props.title} &nbsp;<a href={props.link}><i
                         className="card-icon fas fa-external-link-alt"></i></a></h1>
                       <p className="card-text">
-                        {this.props.text}
+                        {props.text}
                       </p>
                       <p className="card-text text-muted">
-                        {this.props.date}
+                        {props.date}
                       </p>
                 </div>
               </div>
               <div className="col">
-                { this.props.video ?
-                  <iframe class="card-iframe" src={this.props.video} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
-                  : <img className="card-image-border" src={"./images/" + this.props.name + "-screenshot.PNG"}/>
+                { props.video ?
+                  <iframe class="card-iframe" src={props.video} frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+                  : <img className="card-image-border" src={"./images/" + props.name + "-screenshot.PNG"}/>
                 }
               </div>
             </div>
           </div>
-          {this.props.arrow === 'down' ? <div id={this.props.name + "-arrow"} className={"arrow-" + this.props.arrow}></div> : <></>}
+          {props.arrow === 'down' ? <div id={props.name + "-arrow"} className={"arrow-" + props.arrow}></div> : <></>}
       </div>
     )
-  }
 }
-
-export default ProjectCard;
