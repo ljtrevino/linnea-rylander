@@ -136,6 +136,10 @@ html, body {
             color: #dddddd;
         }
 
+        #sky{
+          position: relative;
+        }
+
         .day-sky {
             background: repeating-linear-gradient(#C6DFDF, #C6DFDF 94.99%, #bee07e 95.01%, #bee07e 97.99%, #a5a7a7 98.01%, #a5a7a7 100%);
         }
@@ -199,11 +203,6 @@ html, body {
           width:inherit;
           border-radius: 500px;
         }
-
-        /* .project-card{
-          display: none;
-        } */
-
 
         .arrow-up {
           width: 0;
@@ -435,4 +434,8 @@ html, body {
           to {
             transform: translateX(-35vw);
           }
+        }
+
+        #blockColorblindContent, #colorBlindSVG{
+          height: 0px;
         }

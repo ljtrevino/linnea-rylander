@@ -434,21 +434,6 @@
         }
       };
 
-      function setHeights() {
-        var introHeight = document.getElementById('intro').offsetHeight;
-        document.getElementById("area1").style.marginTop = introHeight.toString().concat("px");
-        document.getElementById("area2").style.marginTop = introHeight.toString().concat("px");
-        document.getElementById("area3").style.marginTop = introHeight.toString().concat("px");
-        document.getElementById("area4").style.marginTop = introHeight.toString().concat("px");
-        document.getElementById("area5").style.marginTop = introHeight.toString().concat("px");
-        document.getElementById("arearight").style.marginTop = introHeight.toString().concat("px");
-        document.getElementById("arealeft").style.marginTop = introHeight.toString().concat("px");
-      };
-
-      window.addEventListener('resize', setHeights);
-      window.addEventListener('load', setHeights);
-
-
       var cards = ['linnear-card', 'wheel-deal-card', 'street-smarts-card', 'vulture-mit-card', 'swe-mit-card', '3d-slicer-card', 'play-it-by-gear-card', 'fotofix-card', 'code-for-good-card']
 
       function toggleCard(id) {
