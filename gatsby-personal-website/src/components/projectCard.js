@@ -29,11 +29,11 @@ export default function ProjectCard(props) {
           <div className="col">
             {props.video ? (
               <iframe
-                class="card-iframe"
+                className="card-iframe"
                 src={props.video}
-                frameborder="0"
+                frameBorder="0"
                 allow="autoplay; encrypted-media"
-                allowfullscreen=""
+                allowFullScreen=""
               ></iframe>
             ) : (
               <img

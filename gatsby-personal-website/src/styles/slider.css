@@ -34,6 +34,7 @@
     border: 0.2vw solid #E3E8C6;
     position: relative;
     animation: transformation .3s ease-in-out;
+    left: 6.5vw;
 }
 
 .moon:before {
@@ -68,4 +69,5 @@
     background-color: #FFE063;
     border: 0.2vw solid #E2C43A;
     animation: transformation .3s ease-in-out;
+    left: 0vw;
 }

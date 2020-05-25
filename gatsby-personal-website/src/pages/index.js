@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { Helmet } from "react-helmet"
 
 import "../styles/main.css"
@@ -9,6 +9,9 @@ import Building from "../components/building"
 import Ground from "../components/ground"
 
 export default function Home() {
+
+  const [darkMode, setMode] = useState(false)
+
   return (
     <>
       <Helmet>
@@ -41,8 +44,8 @@ export default function Home() {
         <title>Linnea Rylander</title>
       </Helmet>
 
-      <Building />
-      <Ground />
+      <Building darkMode={darkMode} setMode={setMode}/>
+      <Ground darkMode={darkMode}/>
     </>
   )
 }

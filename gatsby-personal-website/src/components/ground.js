@@ -3,7 +3,7 @@ import ProjectCard from "../components/projectCard"
 import ProjectIcon from "../components/projectIcon"
 import { useStaticQuery, graphql } from "gatsby"
 
-export default function Ground() {
+export default function Ground(props) {
   const data = useStaticQuery(
     graphql`
       query {
@@ -59,8 +59,8 @@ export default function Ground() {
 
   return (
     <>
-      <div id="grass" className="grass-light"></div>
-      <div id="dirt" className="dirt-light">
+      <div id="grass" className={props.darkMode ? "grass-dark" : "grass-light"}></div>
+    <div id="dirt" className={props.darkMode ? "dirt-dark" : "dirt-light"}>
         <h1 className="subsubtitle display-4 font-weight-normal">
           Side Projects
         </h1>

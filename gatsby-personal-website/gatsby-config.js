@@ -90,6 +90,7 @@ module.exports = {
       "images/building/Twitch.png",
       "images/building/McKinsey.png",
       "images/building/MIT.png",
+      "images/building/building-night.png",
     ],
     socialIcons: [
       {
