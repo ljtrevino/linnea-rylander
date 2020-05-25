@@ -35,7 +35,13 @@ export default function Building(props) {
 
   const generateSocialIcons = () =>
     data.site.siteMetadata.socialIcons.map(x => (
-      <SocialIcon type={x.type} icon={x.icon} link={x.link} key={x.type} darkMode={props.darkMode}/>
+      <SocialIcon
+        type={x.type}
+        icon={x.icon}
+        link={x.link}
+        key={x.type}
+        darkMode={props.darkMode}
+      />
     ))
 
   const generateClouds = () => {
@@ -63,24 +69,27 @@ export default function Building(props) {
 
   const generateStars = () => {
     return (
-      <div className={ props.darkMode ? "areastars" : "areastars-off"}>
+      <div className={props.darkMode ? "areastars" : "areastars-off"}>
         <div className="stars small"></div>
         <div className="stars medium"></div>
         <div className="stars large"></div>
       </div>
-    );
+    )
   }
 
   return (
     <>
       <div
         id="intro"
-        className={ (props.darkMode ? "night-intro" : "day-intro") + " position-relative overflow-hidden text-center"}
+        className={
+          (props.darkMode ? "night-intro" : "day-intro") +
+          " position-relative overflow-hidden text-center"
+        }
         onMouseOver={() => onHoverOut()}
       >
         {generateStars()}
 
-        <Switch darkMode={props.darkMode} setMode={props.setMode}/>
+        <Switch darkMode={props.darkMode} setMode={props.setMode} />
 
         <div id="intro-header" className="col-md-12 pb-lg-5 mx-auto my-5">
           <h1 className="title">Linnea Rylander</h1>
@@ -110,10 +119,18 @@ export default function Building(props) {
         </div>
       </div>
 
-      <div id="road" className={props.darkMode ? "road-dark" : "road-light"} onMouseOver={() => onHoverOut()}>
+      <div
+        id="road"
+        className={props.darkMode ? "road-dark" : "road-light"}
+        onMouseOver={() => onHoverOut()}
+      >
         <img id="blue-car" className="car" src="images/blue-car.PNG" />
       </div>
-      <div id="road2" className={props.darkMode ? "road-dark" : "road-light"} onMouseOver={() => onHoverOut()}>
+      <div
+        id="road2"
+        className={props.darkMode ? "road-dark" : "road-light"}
+        onMouseOver={() => onHoverOut()}
+      >
         <img id="orange-car" className="car" src="images/orange-car.PNG" />
       </div>
     </>

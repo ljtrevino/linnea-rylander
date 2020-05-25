@@ -28,7 +28,7 @@ export default function ProjectCard(props) {
           </div>
           <div className="col-md photo-video">
             {props.video ? (
-              <div class="resp-container">
+              <div className="resp-container">
                 <iframe
                   className="resp-iframe" /* card-iframe */
                   src={props.video}

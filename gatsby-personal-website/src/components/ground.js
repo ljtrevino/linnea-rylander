@@ -59,8 +59,11 @@ export default function Ground(props) {
 
   return (
     <>
-      <div id="grass" className={props.darkMode ? "grass-dark" : "grass-light"}></div>
-    <div id="dirt" className={props.darkMode ? "dirt-dark" : "dirt-light"}>
+      <div
+        id="grass"
+        className={props.darkMode ? "grass-dark" : "grass-light"}
+      ></div>
+      <div id="dirt" className={props.darkMode ? "dirt-dark" : "dirt-light"}>
         <h1 className="subsubtitle display-4 font-weight-normal">
           Side Projects
         </h1>

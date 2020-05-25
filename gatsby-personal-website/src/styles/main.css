@@ -271,7 +271,7 @@ div {
   border-radius: 500px;
 }
 
-.project-card.collapsed{
+.collapsed{
   transform:scaleY(0);
   max-height: 0;
   transition:transform 0.2s ease-in;
