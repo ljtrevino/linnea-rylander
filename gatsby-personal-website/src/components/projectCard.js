@@ -13,7 +13,7 @@ export default function ProjectCard(props) {
       )}
       <div className={props.name + "-color card"}>
         <div className="card-row row no-gutters">
-          <div className="col">
+          <div className="col-md">
             <div className="card-body">
               <h1 className="card-title">
                 {props.title}
@@ -26,18 +26,20 @@ export default function ProjectCard(props) {
               <p className="card-text text-muted">{props.date}</p>
             </div>
           </div>
-          <div className="col">
+          <div className="col-md photo-video">
             {props.video ? (
-              <iframe
-                className="card-iframe"
-                src={props.video}
-                frameBorder="0"
-                allow="autoplay; encrypted-media"
-                allowFullScreen=""
-              ></iframe>
+              <div class="resp-container">
+                <iframe
+                  className="resp-iframe" /* card-iframe */
+                  src={props.video}
+                  frameBorder="0"
+                  allow="autoplay; encrypted-media"
+                  allowFullScreen=""
+                ></iframe>
+            </div>
             ) : (
               <img
-                className="card-image-border"
+                className="card-image"
                 src={"./images/" + props.name + "-screenshot.PNG"}
               />
             )}

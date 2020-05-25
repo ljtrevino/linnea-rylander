@@ -94,6 +94,7 @@ div {
 
 .areastars-off {
   visibility: hidden;
+  height: 0px;
 }
 
 #arealeft {
@@ -270,6 +271,20 @@ div {
   border-radius: 500px;
 }
 
+.project-card.collapsed{
+  transform:scaleY(0);
+  max-height: 0;
+  transition:transform 0.2s ease-in;
+  transition:max-height 0.3s ease-in;
+}
+
+.project-card{
+  transform:scaleY(1);
+  max-height: 100%;
+  transition:transform 0.3s ease-out;
+  /* transition:max-height 0.3s ease-out; */
+}
+
 .arrow-up {
   width: 0;
   height: 5vh;
@@ -380,7 +395,7 @@ div {
 
 .card-text {
   font-family: "Roboto";
-  font-size: 1.1rem;
+  font-size: calc(0.8vh + 0.6vw);
 }
 
 .card-row {
@@ -393,20 +408,34 @@ div {
   color: white;
 }
 
+.resp-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 67%;
+}
+
+.resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
 .card-image {
   width: 100%;
-}
-
-.card-iframe {
-  width: 100%;
-  height: 475px;
-  overflow: auto;
-  max-width: 100%;
-}
-
-.card-image-border {
-  width: 100%;
   border: 1px solid #555555;
+}
+
+/* only vertically center images/videos above md breakpoint */
+@media (min-width: 768px) {
+  .photo-video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
 }
 
 .cl1 {

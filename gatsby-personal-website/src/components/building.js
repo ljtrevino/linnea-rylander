@@ -63,10 +63,10 @@ export default function Building(props) {
 
   const generateStars = () => {
     return (
-      <div class={ props.darkMode ? "areastars" : "areastars-off"}>
-        <div class="stars small"></div>
-        <div class="stars medium"></div>
-        <div class="stars large"></div>
+      <div className={ props.darkMode ? "areastars" : "areastars-off"}>
+        <div className="stars small"></div>
+        <div className="stars medium"></div>
+        <div className="stars large"></div>
       </div>
     );
   }
