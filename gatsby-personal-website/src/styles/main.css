@@ -297,18 +297,16 @@ div {
   border-radius: 500px;
 }
 
-.collapsed{
+.project-card.collapsed{
   transform:scaleY(0);
   max-height: 0;
-  transition:transform 0.2s ease-in;
-  transition:max-height 0.3s ease-in;
+  transition:transform 0.3s ease-in, max-height 0.3s linear;
 }
 
 .project-card{
   transform:scaleY(1);
   max-height: 100%;
-  transition:transform 0.3s ease-out;
-  /* transition:max-height 0.3s ease-out; */
+  transition:transform 0.3s ease-in;
 }
 
 .arrow-up {

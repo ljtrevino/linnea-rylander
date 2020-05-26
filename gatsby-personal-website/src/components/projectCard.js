@@ -2,7 +2,7 @@ import React from "react"
 
 export default function ProjectCard(props) {
   return (
-    <div id={props.name + "-card"} className="project-card">
+    <div id={props.name + "-card"} className={"project-card " + props.collapsed}>
       {props.arrow === "up" ? (
         <div
           id={props.name + "-arrow"}
