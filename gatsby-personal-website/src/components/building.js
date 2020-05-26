@@ -27,14 +27,14 @@ export default function Building(props) {
   const [prevBuilding, setPrevBuilding] = useState(buildings[0])
 
   const onHoverOut = () => {
-    setPrevBuilding(building);
-    setBuilding(props.darkMode ? buildings[buildings.length - 1] : buildings[0]);
+    setPrevBuilding(building)
+    setBuilding(props.darkMode ? buildings[buildings.length - 1] : buildings[0])
   }
 
   const onHoverIn = areaNumber => {
-    setPrevBuilding(building);
+    setPrevBuilding(building)
     /* opacity of prevBuilding is 1 */
-    setBuilding(buildings[areaNumber]);
+    setBuilding(buildings[areaNumber])
     /* opacity of prevBuilding becomes 0 */
   }
 
@@ -64,7 +64,6 @@ export default function Building(props) {
         <a
           id={"area" + i.toString()}
           className="area"
-          onMouseOut={() => onHoverOut()}
           onMouseOver={() => onHoverIn(i)}
           key={i}
         ></a>
@@ -120,7 +119,11 @@ export default function Building(props) {
             onMouseOver={() => onHoverOut()}
           ></a>
           {generateAreas()}
-          <img className="building-alt" src={prevBuilding} style={{opacity: (prevBuilding === building ? 1 : 0)}}/>
+          <img
+            className="building-alt"
+            src={prevBuilding}
+            style={{ opacity: prevBuilding === building ? 1 : 0 }}
+          />
           <img id="building" src={building} />
           {generateStars()}
         </div>

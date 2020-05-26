@@ -26,17 +26,18 @@ export default function Ground(props) {
   const projects = data.site.siteMetadata.projects
   const [cardState, setCardState] = useState({})
   const [collapsed, setCollapsed] = useState(false)
-  const card = <ProjectCard
-        title={cardState.title}
-        name={cardState.name}
-        arrow={cardState.i < 5 ? "up" : "down"}
-        link={cardState.link}
-        text={cardState.text}
-        date={cardState.date}
-        video={cardState.video}
-        collapsed={collapsed ? "" : "collapsed"}
-      />
-
+  const card = (
+    <ProjectCard
+      title={cardState.title}
+      name={cardState.name}
+      arrow={cardState.i < 5 ? "up" : "down"}
+      link={cardState.link}
+      text={cardState.text}
+      date={cardState.date}
+      video={cardState.video}
+      collapsed={collapsed ? "" : "collapsed"}
+    />
+  )
 
   const createIcons = (start, end) => {
     return data.site.siteMetadata.projects
@@ -44,11 +45,11 @@ export default function Ground(props) {
         <ProjectIcon
           name={p.name}
           onClick={() => {
-            if (projects[i].title === cardState.title){
-              setCollapsed(false);
-              setTimeout(function(){
-                  setCardState({});
-              }, 350);
+            if (projects[i].title === cardState.title) {
+              setCollapsed(false)
+              setTimeout(function () {
+                setCardState({})
+              }, 350)
             } else {
               setCardState({
                 title: projects[i].title,
@@ -57,9 +58,9 @@ export default function Ground(props) {
                 link: projects[i].link,
                 text: projects[i].text,
                 date: projects[i].date,
-                video: projects[i].video
-              });
-              setCollapsed(true);
+                video: projects[i].video,
+              })
+              setCollapsed(true)
             }
           }}
           key={i}
