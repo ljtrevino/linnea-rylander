@@ -6,15 +6,13 @@ export default function ProjectCard(props) {
       id={props.name + "-card"}
       className={"project-card " + props.collapsed}
     >
-      {props.arrow === "up" ? (
         <div
           id={props.name + "-arrow"}
-          className={"arrow-" + props.arrow}
+          style={{visibility: props.arrow === "up" ? "visible" : "hidden"}}
+          className={"transition arrow-" + props.arrow}
         ></div>
-      ) : (
-        <></>
-      )}
-      <div className={props.name + "-color card"}>
+
+      <div className={props.name + "-color card transition"}>
         <div className="card-row row no-gutters">
           <div className="col-md">
             <div className="card-body">
@@ -49,14 +47,11 @@ export default function ProjectCard(props) {
           </div>
         </div>
       </div>
-      {props.arrow === "down" ? (
         <div
           id={props.name + "-arrow"}
-          className={"arrow-" + props.arrow}
+          style={{visibility: props.arrow === "down" ? "visible" : "hidden"}}
+          className={"transition arrow-" + props.arrow}
         ></div>
-      ) : (
-        <></>
-      )}
     </div>
   )
 }

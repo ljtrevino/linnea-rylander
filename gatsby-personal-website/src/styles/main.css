@@ -321,6 +321,10 @@ div {
   margin-left: 8.25vw;
 }
 
+.transition{
+  transition: all 1s, visibility 0s;
+}
+
 .linnear-color {
   background-color: #a9d562 !important;
 }
