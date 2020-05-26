@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Cloud from "./cloud"
 import SocialIcon from "./socialIcon"
@@ -24,13 +24,18 @@ export default function Building(props) {
 
   const buildings = data.site.siteMetadata.buildings
   const [building, setBuilding] = useState(buildings[0])
+  const [prevBuilding, setPrevBuilding] = useState(buildings[0])
 
   const onHoverOut = () => {
-    setBuilding(props.darkMode ? buildings[buildings.length - 1] : buildings[0])
+    setPrevBuilding(building);
+    setBuilding(props.darkMode ? buildings[buildings.length - 1] : buildings[0]);
   }
 
   const onHoverIn = areaNumber => {
-    setBuilding(buildings[areaNumber])
+    setPrevBuilding(building);
+    /* opacity of prevBuilding is 1 */
+    setBuilding(buildings[areaNumber]);
+    /* opacity of prevBuilding becomes 0 */
   }
 
   const generateSocialIcons = () =>
@@ -59,6 +64,7 @@ export default function Building(props) {
         <a
           id={"area" + i.toString()}
           className="area"
+          onMouseOut={() => onHoverOut()}
           onMouseOver={() => onHoverIn(i)}
           key={i}
         ></a>
@@ -104,16 +110,17 @@ export default function Building(props) {
       <div id="outer-sky" className={props.darkMode ? "outer-night-sky" : ""}>
         <div id="sky" className={props.darkMode ? "night-sky" : "day-sky"}>
           <a
-            id="arealeft"
+            id="area-left"
             className="area"
             onMouseOver={() => onHoverOut()}
           ></a>
           <a
-            id="arearight"
+            id="area-right"
             className="area"
             onMouseOver={() => onHoverOut()}
           ></a>
           {generateAreas()}
+          <img className="building-alt" src={prevBuilding} style={{opacity: (prevBuilding === building ? 1 : 0)}}/>
           <img id="building" src={building} />
           {generateStars()}
         </div>
