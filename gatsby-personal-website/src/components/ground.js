@@ -23,20 +23,18 @@ export default function Ground(props) {
     `
   )
 
-  const [cards, setCards] = useState(null)
-  const [prevName, setprevName] = useState(null)
-  const allCards = data.site.siteMetadata.projects.map((p, i) => (
-    <ProjectCard
-      title={p.title}
-      name={p.name}
-      arrow={i < 5 ? "up" : "down"}
-      link={p.link}
-      text={p.text}
-      date={p.date}
-      video={p.video}
-      key={i}
-    />
-  ))
+  const projects = data.site.siteMetadata.projects
+  const [cardState, setCardState] = useState({})
+  const card = <ProjectCard
+        title={cardState.title}
+        name={cardState.name}
+        arrow={cardState.i < 5 ? "up" : "down"}
+        link={cardState.link}
+        text={cardState.text}
+        date={cardState.date}
+        video={cardState.video}
+      />
+
 
   const createIcons = (start, end) => {
     return data.site.siteMetadata.projects
@@ -44,12 +42,19 @@ export default function Ground(props) {
         <ProjectIcon
           name={p.name}
           onClick={() => {
-            setCards(
-              allCards.filter(
-                x => x.props.name === p.name && prevName !== p.name
-              )
-            )
-            setprevName(prevName === p.name ? null : p.name)
+            if (projects[i].title === cardState.title){
+              setCardState({});
+            } else{
+              setCardState({
+                title: projects[i].title,
+                name: projects[i].name,
+                i: i,
+                link: projects[i].link,
+                text: projects[i].text,
+                date: projects[i].date,
+                video: projects[i].video
+              });
+            }
           }}
           key={i}
         />
@@ -70,7 +75,8 @@ export default function Ground(props) {
 
         <div className="project-icon-container row">{createIcons(0, 5)}</div>
 
-        {cards}
+        {/*{cards}*/}
+        {cardState.title ? card : null}
 
         <div className="project-icon-container row">{createIcons(5, 10)}</div>
       </div>
