@@ -114,5 +114,8 @@ module.exports = {
         link: "Linnea_Rylander_Resume.pdf",
       },
     ],
+    cars: [
+      "blue-car", "orange-car"
+    ],
   },
 }

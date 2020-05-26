@@ -16,6 +16,7 @@ export default function Building(props) {
               icon
               link
             }
+            cars
           }
         }
       }
@@ -82,6 +83,16 @@ export default function Building(props) {
     )
   }
 
+  const generateCars = () =>
+    data.site.siteMetadata.cars.map(car => (
+      <div
+        className={props.darkMode ? "road-dark" : "road-light"}
+        onMouseOver={() => onHoverOut()}
+      >
+        <img id={car} className="car" src={"images/" + car + ".PNG"} />
+      </div>
+    ))
+
   return (
     <>
       <div
@@ -93,19 +104,14 @@ export default function Building(props) {
         onMouseOver={() => onHoverOut()}
       >
         {generateStars()}
-
         <Switch darkMode={props.darkMode} setMode={props.setMode} />
-
         <div id="intro-header" className="col-md-12 pb-lg-5 mx-auto my-5">
           <h1 className="title">Linnea Rylander</h1>
           <h2 className="subtitle">DEVELOPER • DESIGNER • ENGINEER</h2>
-
           {generateSocialIcons()}
         </div>
       </div>
-
       {generateClouds()}
-
       <div id="outer-sky" className={props.darkMode ? "outer-night-sky" : ""}>
         <div id="sky" className={props.darkMode ? "night-sky" : "day-sky"}>
           <a
@@ -128,21 +134,7 @@ export default function Building(props) {
           {generateStars()}
         </div>
       </div>
-
-      <div
-        id="road"
-        className={props.darkMode ? "road-dark" : "road-light"}
-        onMouseOver={() => onHoverOut()}
-      >
-        <img id="blue-car" className="car" src="images/blue-car.PNG" />
-      </div>
-      <div
-        id="road2"
-        className={props.darkMode ? "road-dark" : "road-light"}
-        onMouseOver={() => onHoverOut()}
-      >
-        <img id="orange-car" className="car" src="images/orange-car.PNG" />
-      </div>
+      {generateCars()}
     </>
   )
 }
