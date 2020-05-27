@@ -84,13 +84,20 @@ module.exports = {
       },
     ],
     buildings: [
-      "images/building/building-day.png",
+      "images/building/building.png",
       "images/building/Facebook.png",
       "images/building/Messenger.png",
       "images/building/Twitch.png",
       "images/building/McKinsey.png",
       "images/building/MIT.png",
-      "images/building/building-night.png",
+    ],
+    buildingsDark: [
+      "images/building/building-dark.png",
+      "images/building/Facebook-dark.png",
+      "images/building/Messenger-dark.png",
+      "images/building/Twitch-dark.png",
+      "images/building/McKinsey-dark.png",
+      "images/building/MIT-dark.png",
     ],
     socialIcons: [
       {

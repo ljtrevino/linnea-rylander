@@ -7,21 +7,11 @@ div {
   white-space: pre-wrap;
 }
 
-#building {
+.building {
   position: relative;
   width: 60vw;
-  margin-left: 20vw;
+  margin-left: 20.375vw;
   z-index: 1;
-}
-
-.building-alt {
-  left: 0;
-  top: 0;
-  position: absolute;
-  width: 60vw;
-  margin-left: 20vw;
-  transition: opacity 1s ease-in;
-  z-index: 2;
 }
 
 .z3{
@@ -79,11 +69,17 @@ div {
   font-size: 4.3vw;
 }
 
+.area-container:not(:hover) .area{
+  opacity: 0;
+}
+
+.area-container .area:hover{
+  opacity: 1;
+}
+
 .area {
-  background: #000;
   display: block;
   height: 28.89vw;
-  opacity: 0;
   position: absolute;
   width: 41.4vw;
   left: 29.7vw;
@@ -92,23 +88,73 @@ div {
 }
 
 #area1 {
-  top: 3.6vw;
+  top: 3vw;
+  background-image: url("../../public/images/rooms/f-room.png");
+  background-size: cover;
+  transition: all 0.5s ease-in;
+}
+
+#area1:hover {
+  top: 3vw;
+  background-image: url("../../public/images/rooms/f-room-hover.png");
+  background-size: cover;
+  transition: all 0.5s ease-out;
 }
 
 #area2 {
-  top: 32.49vw;
+  top: 31.9vw;
+  background-image: url("../../public/images/rooms/me-room.png");
+  background-size: cover;
+  transition: all 0.5s ease-in;
+}
+
+#area2:hover {
+  top: 31.9vw;
+  background-image: url("../../public/images/rooms/me-room-hover.png");
+  background-size: cover;
+  transition: all 0.5s ease-out;
 }
 
 #area3 {
-  top: 61.38vw;
+  top: 60.8vw;
+  background-image: url("../../public/images/rooms/t-room.png");
+  background-size: cover;
+  transition: all 0.5s ease-in;
+}
+
+#area3:hover {
+  top: 60.8vw;
+  background-image: url("../../public/images/rooms/t-room-hover.png");
+  background-size: cover;
+  transition: all 0.5s ease-out;
 }
 
 #area4 {
-  top: 90.27vw;
+  top: 89.75vw;
+  background-image: url("../../public/images/rooms/mc-room.png");
+  background-size: cover;
+  transition: all 0.5s ease-in;
+}
+
+#area4:hover {
+  top: 89.75vw;
+  background-image: url("../../public/images/rooms/mc-room-hover.png");
+  background-size: cover;
+  transition: all 0.5s ease-out;
 }
 
 #area5 {
-  top: 119.16vw;
+  top: 118.7vw;
+  background-image: url("../../public/images/rooms/mi-room.png");
+  background-size: cover;
+  transition: all 0.5s ease-in;
+}
+
+#area5:hover {
+  top: 118.7vw;
+  background-image: url("../../public/images/rooms/mi-room-hover.png");
+  background-size: cover;
+  transition: all 0.5s ease-out;
 }
 
 .areastars {
@@ -121,22 +167,6 @@ div {
 .areastars-off {
   visibility: hidden;
   height: 0px;
-}
-
-#area-left {
-  top: 3.6vw;
-  height: 144.45vw;
-  background: #666666;
-  width: 29.7vw;
-  left: 0vw;
-}
-
-#area-right {
-  top: 3.6vw;
-  height: 144.45vw;
-  background: #666666;
-  width: 29.7vw;
-  left: 71.1vw;
 }
 
 .intro-btn {
@@ -199,6 +229,10 @@ div {
 
 #sky {
   position: relative;
+}
+
+.parent:hover .child{
+  opacity: 0.3;
 }
 
 .day-sky {
@@ -527,7 +561,7 @@ div {
 .car {
   width: 20vw;
   position: relative;
-  z-index: 2;
+  z-index: 5;
   top: -8vw;
 }
 

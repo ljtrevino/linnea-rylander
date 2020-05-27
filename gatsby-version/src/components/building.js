@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Cloud from "./cloud"
 import SocialIcon from "./socialIcon"
@@ -11,6 +11,7 @@ export default function Building(props) {
         site {
           siteMetadata {
             buildings
+            buildingsDark
             socialIcons {
               type
               icon
@@ -22,22 +23,6 @@ export default function Building(props) {
       }
     `
   )
-
-  const buildings = data.site.siteMetadata.buildings
-  const [building, setBuilding] = useState(buildings[0])
-  const [prevBuilding, setPrevBuilding] = useState(buildings[0])
-
-  const onHoverOut = () => {
-    setPrevBuilding(building)
-    setBuilding(props.darkMode ? buildings[buildings.length - 1] : buildings[0])
-  }
-
-  const onHoverIn = areaNumber => {
-    setPrevBuilding(building)
-    /* opacity of prevBuilding is 1 */
-    setBuilding(buildings[areaNumber])
-    /* opacity of prevBuilding becomes 0 */
-  }
 
   const generateSocialIcons = () => {
     return(
@@ -64,12 +49,11 @@ export default function Building(props) {
     let areas = []
     for (let i = 1; i <= 5; i++) {
       areas.push(
-        <a
+        <div
           id={"area" + i.toString()}
           className="area"
-          onMouseOver={() => onHoverIn(i)}
           key={i}
-        ></a>
+        ></div>
       )
     }
     return areas
@@ -90,7 +74,6 @@ export default function Building(props) {
       data.site.siteMetadata.cars.map(car => (
         <div key={car}
           className={props.darkMode ? "road-dark" : "road-light"}
-          onMouseOver={() => onHoverOut()}
         >
           <img id={car} className="car" src={"images/" + car + ".PNG"} />
         </div>
@@ -105,7 +88,6 @@ export default function Building(props) {
           (props.darkMode ? "night-intro" : "day-intro") +
           " position-relative overflow-hidden text-center"
         }
-        onMouseOver={() => onHoverOut()}
       >
         {generateStars()}
         <Switch darkMode={props.darkMode} setMode={props.setMode} />
@@ -118,23 +100,12 @@ export default function Building(props) {
       {generateClouds()}
       <div id="outer-sky" className={props.darkMode ? "outer-night-sky" : ""}>
         <div id="sky" className={props.darkMode ? "night-sky" : "day-sky"}>
-          <a
-            id="area-left"
-            className="area"
-            onMouseOver={() => onHoverOut()}
-          ></a>
-          <a
-            id="area-right"
-            className="area"
-            onMouseOver={() => onHoverOut()}
-          ></a>
-          {generateAreas()}
-          <img
-            className="building-alt"
-            src={prevBuilding}
-            style={{ opacity: prevBuilding === building ? 1 : 0 }}
-          />
-          <img id="building" src={building} />
+              <div className="area-container">
+              {generateAreas()}
+              </div>
+          <div>
+            <img id="building" className="building" src={props.darkMode ? "images/rooms/b-dark.png" : "images/rooms/b-light.png"}/>
+          </div>
           {generateStars()}
         </div>
       </div>
