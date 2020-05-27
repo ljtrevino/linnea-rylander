@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet"
 
 import "../styles/main.css"
 import "../styles/slider.css"
-import "../styles/stars.css"
+import "../styles/stars.scss"
 import '../styles/font-awesome/css/all.css'
 
 import Building from "../components/building"
