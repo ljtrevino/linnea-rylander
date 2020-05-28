@@ -76,9 +76,7 @@ export default function Ground(props) {
         className={props.darkMode ? "grass-dark" : "grass-light"}
       ></div>
       <div id="dirt" className={props.darkMode ? "dirt-dark" : "dirt-light"}>
-        <h1 className="subsubtitle font-weight-normal">
-          Side Projects
-        </h1>
+        <h1 className="subsubtitle font-weight-normal">Side Projects</h1>
 
         <div className="project-icon-container row">{createIcons(0, 5)}</div>
 

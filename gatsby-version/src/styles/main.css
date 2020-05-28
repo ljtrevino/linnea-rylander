@@ -14,19 +14,19 @@ div {
   z-index: 1;
 }
 
-.z3{
+.z3 {
   z-index: 3;
 }
 
-.o1{
+.o1 {
   opacity: 1;
 }
 
-.z1{
+.z1 {
   z-index: 1;
 }
 
-.o0{
+.o0 {
   opacity: 0;
 }
 
@@ -69,11 +69,11 @@ div {
   font-size: 4.3vw;
 }
 
-.area-container:not(:hover) .area{
+.area-container:not(:hover) .area {
   opacity: 0;
 }
 
-.area-container .area:hover{
+.area-container .area:hover {
   opacity: 1;
 }
 
@@ -88,31 +88,25 @@ div {
 }
 
 #area1 {
-  top: 3vw;
+  top: 3.1vw;
   background-image: url("../../public/images/rooms/f-room.png");
   background-size: cover;
   transition: all 0.5s ease-in;
 }
 
 #area1:hover {
-  top: 3vw;
   background-image: url("../../public/images/rooms/f-room-hover.png");
-  background-size: cover;
-  transition: all 0.5s ease-out;
 }
 
 #area2 {
-  top: 31.9vw;
+  top: 31.95vw;
   background-image: url("../../public/images/rooms/me-room.png");
   background-size: cover;
   transition: all 0.5s ease-in;
 }
 
 #area2:hover {
-  top: 31.9vw;
   background-image: url("../../public/images/rooms/me-room-hover.png");
-  background-size: cover;
-  transition: all 0.5s ease-out;
 }
 
 #area3 {
@@ -123,38 +117,29 @@ div {
 }
 
 #area3:hover {
-  top: 60.8vw;
   background-image: url("../../public/images/rooms/t-room-hover.png");
-  background-size: cover;
-  transition: all 0.5s ease-out;
 }
 
 #area4 {
-  top: 89.75vw;
+  top: 89.7vw;
   background-image: url("../../public/images/rooms/mc-room.png");
   background-size: cover;
   transition: all 0.5s ease-in;
 }
 
 #area4:hover {
-  top: 89.75vw;
   background-image: url("../../public/images/rooms/mc-room-hover.png");
-  background-size: cover;
-  transition: all 0.5s ease-out;
 }
 
 #area5 {
-  top: 118.7vw;
+  top: 118.6vw;
   background-image: url("../../public/images/rooms/mi-room.png");
   background-size: cover;
   transition: all 0.5s ease-in;
 }
 
 #area5:hover {
-  top: 118.7vw;
   background-image: url("../../public/images/rooms/mi-room-hover.png");
-  background-size: cover;
-  transition: all 0.5s ease-out;
 }
 
 .areastars {
@@ -231,7 +216,7 @@ div {
   position: relative;
 }
 
-.parent:hover .child{
+.parent:hover .child {
   opacity: 0.3;
 }
 
@@ -255,6 +240,23 @@ div {
     #7d8080 98.01%,
     #7d8080 100%
   );
+}
+
+.mail {
+  position: absolute;
+  right: 9vw;
+  width: 7vw;
+  height: 10.857vw;
+  transform: translateY(-13.5vw);
+  background: url("../../public/images/mailbox-outside.png");
+  background-size: cover;
+  transition: all 0.5s;
+}
+
+.mail:hover {
+  background: url("../../public/images/mailbox-inside.png");
+  background-size: cover;
+  transition: all 0.5s;
 }
 
 .road-dark {
@@ -331,16 +333,16 @@ div {
   border-radius: 500px;
 }
 
-.project-card.collapsed{
-  transform:scaleY(0);
+.project-card.collapsed {
+  transform: scaleY(0);
   max-height: 0;
-  transition:transform 0.3s ease-in, max-height 0.3s linear;
+  transition: transform 0.3s ease-in, max-height 0.3s linear;
 }
 
-.project-card{
-  transform:scaleY(1);
+.project-card {
+  transform: scaleY(1);
   max-height: 100%;
-  transition:transform 0.3s ease-in;
+  transition: transform 0.3s ease-in;
 }
 
 .arrow-up {
@@ -355,7 +357,7 @@ div {
   margin-left: 8.25vw;
 }
 
-.transition{
+.transition {
   transition: all 1s, visibility 0s;
 }
 
@@ -471,18 +473,18 @@ div {
 }
 
 .resp-container {
-    position: relative;
-    overflow: hidden;
-    padding-top: 67%;
+  position: relative;
+  overflow: hidden;
+  padding-top: 67%;
 }
 
 .resp-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 .card-image {

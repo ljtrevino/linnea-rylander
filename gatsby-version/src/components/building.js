@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Cloud from "./cloud"
 import SocialIcon from "./socialIcon"
@@ -10,10 +10,9 @@ export default function Building(props) {
       query {
         site {
           siteMetadata {
-            buildings
-            buildingsDark
             socialIcons {
               type
+              class
               icon
               link
             }
@@ -25,16 +24,16 @@ export default function Building(props) {
   )
 
   const generateSocialIcons = () => {
-    return(
-      data.site.siteMetadata.socialIcons.map(x => (
-        <SocialIcon
-          type={x.type}
-          icon={x.icon}
-          link={x.link}
-          key={x.type}
-          darkMode={props.darkMode}
-        />
-    )))
+    return data.site.siteMetadata.socialIcons.map(x => (
+      <SocialIcon
+        type={x.type}
+        className={x.class}
+        icon={x.icon}
+        link={x.link}
+        key={x.type}
+        darkMode={props.darkMode}
+      />
+    ))
   }
 
   const generateClouds = () => {
@@ -49,11 +48,7 @@ export default function Building(props) {
     let areas = []
     for (let i = 1; i <= 5; i++) {
       areas.push(
-        <div
-          id={"area" + i.toString()}
-          className="area"
-          key={i}
-        ></div>
+        <div id={"area" + i.toString()} className="area" key={i}></div>
       )
     }
     return areas
@@ -70,14 +65,11 @@ export default function Building(props) {
   }
 
   const generateCars = () => {
-    return(
-      data.site.siteMetadata.cars.map(car => (
-        <div key={car}
-          className={props.darkMode ? "road-dark" : "road-light"}
-        >
-          <img id={car} className="car" src={"images/" + car + ".PNG"} />
-        </div>
-    )))
+    return data.site.siteMetadata.cars.map(car => (
+      <div key={car} className={props.darkMode ? "road-dark" : "road-light"}>
+        <img id={car} className="car" src={"images/" + car + ".PNG"} />
+      </div>
+    ))
   }
 
   return (
@@ -100,15 +92,22 @@ export default function Building(props) {
       {generateClouds()}
       <div id="outer-sky" className={props.darkMode ? "outer-night-sky" : ""}>
         <div id="sky" className={props.darkMode ? "night-sky" : "day-sky"}>
-              <div className="area-container">
-              {generateAreas()}
-              </div>
+          <div className="area-container">{generateAreas()}</div>
           <div>
-            <img id="building" className="building" src={props.darkMode ? "images/rooms/b-dark.png" : "images/rooms/b-light.png"}/>
+            <img
+              id="building"
+              className="building"
+              src={
+                props.darkMode
+                  ? "images/rooms/b-dark.png"
+                  : "images/rooms/b-light.png"
+              }
+            />
           </div>
           {generateStars()}
         </div>
       </div>
+      <a className="mail" href="mailto:linnearylander@gmail.com" />
       {generateCars()}
     </>
   )

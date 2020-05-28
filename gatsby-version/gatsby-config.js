@@ -6,7 +6,19 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [`gatsby-plugin-react-helmet`, `gatsby-plugin-sass`] /*`gatsby-plugin-emotion`*/,
+  plugins: [
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        // Setting a color is optional.
+        color: `tomato`,
+        // Enable the loading spinner.
+        showSpinner: true,
+      },
+    },
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
+  ],
   siteMetadata: {
     projects: [
       {
@@ -83,46 +95,32 @@ module.exports = {
         link: `http://google.com`,
       },
     ],
-    buildings: [
-      "images/building/building.png",
-      "images/building/Facebook.png",
-      "images/building/Messenger.png",
-      "images/building/Twitch.png",
-      "images/building/McKinsey.png",
-      "images/building/MIT.png",
-    ],
-    buildingsDark: [
-      "images/building/building-dark.png",
-      "images/building/Facebook-dark.png",
-      "images/building/Messenger-dark.png",
-      "images/building/Twitch-dark.png",
-      "images/building/McKinsey-dark.png",
-      "images/building/MIT-dark.png",
-    ],
     socialIcons: [
       {
         type: "github",
-        icon: "icon fab fa-github-square",
+        class: "icon",
+        icon: "fa-github-square",
         link: "https://github.com/lrylander",
       },
       {
         type: "linkedin",
-        icon: "icon fab fa-linkedin",
+        class: "icon",
+        icon: "fa-linkedin",
         link: "https://www.linkedin.com/in/linnearylander",
       },
       {
         type: "envelope",
-        icon: "icon fas fa-envelope-square",
+        class: "icon",
+        icon: "fa-envelope-square",
         link: "mailto:linnearylander@gmail.com",
       },
       {
         type: "resume",
-        icon: "icon-rect fas fa-file-alt",
+        class: "icon-rect",
+        icon: "fa-file-alt",
         link: "Linnea_Rylander_Resume.pdf",
       },
     ],
-    cars: [
-      "blue-car", "orange-car"
-    ],
+    cars: ["blue-car", "orange-car"],
   },
 }
