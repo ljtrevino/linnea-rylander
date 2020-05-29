@@ -1,6 +1,9 @@
 import React from "react"
+import { IconContext } from "react-icons"
+import { FaExternalLinkAlt } from "react-icons/fa"
 
 export default function ProjectCard(props) {
+
   return (
     <div
       id={props.name + "-card"}
@@ -18,9 +21,11 @@ export default function ProjectCard(props) {
             <div className="card-body">
               <h1 className="card-title">
                 {props.title}
-                &nbsp;
+                &nbsp;&nbsp;
                 <a href={props.link}>
-                  <i className="card-icon fas fa-external-link-alt"></i>
+                  <IconContext.Provider value={{ className: "card-icon" }}>
+                    <FaExternalLinkAlt />
+                  </IconContext.Provider>
                 </a>
               </h1>
               <p className="card-text">{props.text}</p>

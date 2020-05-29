@@ -461,6 +461,7 @@ div {
   font-size: 3vw;
   font-family: "Righteous", cursive;
   text-transform: uppercase;
+  margin-bottom: 0rem;
 }
 
 .card-text {
@@ -476,6 +477,7 @@ div {
 .card-icon {
   font-size: 2.7vw;
   color: white;
+  margin-bottom: .75rem;
 }
 
 .resp-container {
