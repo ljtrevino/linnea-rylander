@@ -14,6 +14,7 @@ https://lrylander.github.io/linnea-rylander/
 
 
 ### 🛠️ Helpful Development Commands
+**Current website is on the gh-pages branch in the gatsby-version folder**
 
 #### Deploy
 
