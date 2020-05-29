@@ -4,7 +4,7 @@ export default function ProjectCard(props) {
   return (
     <div className="col">
       <img
-        src={"images/" + props.name + "-icon.png"}
+        src={"./images/" + props.name + "-icon.png"}
         className="project-icon"
         onClick={props.onClick}
       />

@@ -4,7 +4,6 @@ import { Helmet } from "react-helmet"
 import "../styles/main.css"
 import "../styles/slider.css"
 import "../styles/stars.scss"
-import "../styles/font-awesome/css/all.css"
 
 import Building from "../components/building"
 import Ground from "../components/ground"
@@ -31,7 +30,7 @@ export default function Home() {
         />
 
         {/* Favicon */}
-        <link rel="shortcut icon" href="images/favicon.png" />
+        <link rel="shortcut icon" href="./images/favicon.png" />
 
         <title>Linnea Rylander</title>
       </Helmet>

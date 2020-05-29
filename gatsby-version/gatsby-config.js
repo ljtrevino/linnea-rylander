@@ -6,16 +6,8 @@
 
 module.exports = {
   /* Your site config here */
+  pathPrefix: "/linnea-rylander",
   plugins: [
-    {
-      resolve: `gatsby-plugin-nprogress`,
-      options: {
-        // Setting a color is optional.
-        color: `tomato`,
-        // Enable the loading spinner.
-        showSpinner: true,
-      },
-    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
   ],

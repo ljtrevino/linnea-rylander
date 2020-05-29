@@ -3,6 +3,8 @@ import { useStaticQuery, graphql } from "gatsby"
 import Cloud from "./cloud"
 import SocialIcon from "./socialIcon"
 import Switch from "./switch"
+import buildingLight from "../../public/images/rooms/b-light.png"
+import buildingDark from "../../public/images/rooms/b-dark.png"
 
 export default function Building(props) {
   const data = useStaticQuery(
@@ -67,7 +69,7 @@ export default function Building(props) {
   const generateCars = () => {
     return data.site.siteMetadata.cars.map(car => (
       <div key={car} className={props.darkMode ? "road-dark" : "road-light"}>
-        <img id={car} className="car" src={"images/" + car + ".PNG"} />
+        <img id={car} className="car" src={"./images/" + car + (props.darkMode ? "-dark" : "-light") + ".png"} />
       </div>
     ))
   }
@@ -99,8 +101,8 @@ export default function Building(props) {
               className="building"
               src={
                 props.darkMode
-                  ? "images/rooms/b-dark.png"
-                  : "images/rooms/b-light.png"
+                  ? buildingDark
+                  : buildingLight
               }
             />
           </div>

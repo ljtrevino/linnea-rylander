@@ -1,6 +1,7 @@
 import React from "react"
 
 export default function ProjectCard(props) {
+
   return (
     <div
       id={props.name + "-card"}
@@ -41,7 +42,7 @@ export default function ProjectCard(props) {
             ) : (
               <img
                 className="card-image"
-                src={"images/" + props.name + "-screenshot.PNG"}
+                src={"images/" + props.name + "-screenshot.png"}
               />
             )}
           </div>
