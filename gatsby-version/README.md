@@ -1,6 +1,6 @@
 # 👩🏼‍🦰 Linnea's Personal Website
 
-**Created with reactjs, gatsbyjs, and bootstrap **
+**Created with reactjs, gatsbyjs, and bootstrap**
 
 ## 💻 Github Pages URL
 
