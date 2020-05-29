@@ -15,3 +15,7 @@ https://lrylander.github.io/linnea-rylander/
 ### Run locally (localhost:8000)
 
 `gatsby develop`
+
+### Force publish to gh-pages branch
+
+`git push -f origin gh-pages`
