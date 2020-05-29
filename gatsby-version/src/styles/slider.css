@@ -6,6 +6,7 @@
   border-radius: 3vw;
   left: 87.5vw;
   z-index: 3;
+  cursor: pointer;
 }
 
 .wrap-sun {
@@ -26,7 +27,6 @@
   height: 4.5vw;
   border-radius: 50%;
   transition: 0.3s cubic-bezier(0.68, 0.45, 0.44, 0.73);
-  cursor: pointer;
 }
 
 .moon {

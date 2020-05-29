@@ -32,6 +32,9 @@ export default function Home() {
         {/* Favicon */}
         <link rel="shortcut icon" href="./images/favicon.png" />
 
+        {/* Google Font */}
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap" rel="stylesheet"/>
+
         <title>Linnea Rylander</title>
       </Helmet>
 

@@ -82,7 +82,7 @@ export default function Ground(props) {
 
         {card}
 
-        <div className="project-icon-container row">{createIcons(5, 10)}</div>
+        <div className="project-icon-container row four-projects">{createIcons(5, 9)}</div>
       </div>
     </>
   )

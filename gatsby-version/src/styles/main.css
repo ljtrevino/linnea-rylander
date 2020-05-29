@@ -328,6 +328,12 @@ div {
   padding-bottom: 2.5vh;
 }
 
+.project-icon-container.four-projects {
+  margin-left: 7.5vw !important;
+  margin-right: 7.5vw !important;
+}
+
+
 .project-icon {
   height: inherit;
   width: inherit;
@@ -355,7 +361,7 @@ div {
 
 #linnear-arrow {
   border-bottom: 4vh solid #a9d562;
-  margin-left: 8.25vw;
+  margin-left: 45vw;
 }
 
 .transition {
@@ -368,7 +374,7 @@ div {
 
 #wheel-deal-arrow {
   border-bottom: 4vh solid #bd9aab;
-  margin-left: 26.75vw;
+  margin-left: 8.25vw;
 }
 
 .wheel-deal-color {
@@ -377,7 +383,7 @@ div {
 
 #street-smarts-arrow {
   border-bottom: 4vh solid #2c3e51;
-  margin-left: 45vw;
+  margin-left: 82vw;
 }
 
 .street-smarts-color {
@@ -385,8 +391,8 @@ div {
 }
 
 #vulture-mit-arrow {
-  border-bottom: 4vh solid #42ce97;
-  margin-left: 63.5vw;
+  border-top: 4vh solid #42ce97;
+  margin-left: 17vw;
 }
 
 .vulture-mit-color {
@@ -394,8 +400,8 @@ div {
 }
 
 #swe-mit-arrow {
-  border-bottom: 4vh solid #aa98bf;
-  margin-left: 82vw;
+  border-top: 4vh solid #aa98bf;
+  margin-left: 35.5vw;
 }
 
 .swe-mit-color {
@@ -404,7 +410,7 @@ div {
 
 #slicer-arrow {
   border-top: 4vh solid #d1722e;
-  margin-left: 8.25vw;
+  margin-left: 54.5vw;
 }
 
 .slicer-color {
@@ -412,8 +418,8 @@ div {
 }
 
 #play-it-by-gear-arrow {
-  border-top: 4vh solid #56bdcd;
-  margin-left: 26.75vw;
+  border-bottom: 4vh solid #56bdcd;
+  margin-left: 63.5vw;
 }
 
 .play-it-by-gear-color {
@@ -421,8 +427,8 @@ div {
 }
 
 #fotofix-arrow {
-  border-top: 4vh solid #a1baca;
-  margin-left: 45vw;
+  border-bottom: 4vh solid #a1baca;
+  margin-left: 26.75vw;
 }
 
 .fotofix-color {
@@ -431,7 +437,7 @@ div {
 
 #code-for-good-arrow {
   border-top: 4vh solid #9acfdd;
-  margin-left: 63.5vw;
+  margin-left: 73vw;
 }
 
 .code-for-good-color {
