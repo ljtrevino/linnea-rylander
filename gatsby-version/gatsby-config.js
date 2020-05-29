@@ -7,10 +7,7 @@
 module.exports = {
   /* Your site config here */
   pathPrefix: "/linnea-rylander",
-  plugins: [
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sass`,
-  ],
+  plugins: [`gatsby-plugin-react-helmet`, `gatsby-plugin-sass`],
   siteMetadata: {
     projects: [
       {

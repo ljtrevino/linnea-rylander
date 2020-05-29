@@ -69,7 +69,13 @@ export default function Building(props) {
   const generateCars = () => {
     return data.site.siteMetadata.cars.map(car => (
       <div key={car} className={props.darkMode ? "road-dark" : "road-light"}>
-        <img id={car} className="car" src={"./images/" + car + (props.darkMode ? "-dark" : "-light") + ".png"} />
+        <img
+          id={car}
+          className="car"
+          src={
+            "./images/" + car + (props.darkMode ? "-dark" : "-light") + ".png"
+          }
+        />
       </div>
     ))
   }
@@ -99,11 +105,7 @@ export default function Building(props) {
             <img
               id="building"
               className="building"
-              src={
-                props.darkMode
-                  ? buildingDark
-                  : buildingLight
-              }
+              src={props.darkMode ? buildingDark : buildingLight}
             />
           </div>
           {generateStars()}
