@@ -10,7 +10,7 @@ https://lrylander.github.io/linnea-rylander/
 
 ### Deploy
 
-`npm run build`
+`npm run deploy`
 
 ### Run locally (localhost:8000)
 
