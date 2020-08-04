@@ -49,6 +49,14 @@ module.exports = {
         video: `https://www.youtube.com/embed/yxqBb4jaiFQ?rel=0&amp;showinfo=0`,
       },
       {
+        text: `Domino Image Creator takes any image and transforms it into a piece of artwork that can be created with dominoes.  Users can select the number of sets of dominoes to use and whether they want to use white or black dominoes.  The GUI then generates an image of what the domino artwork will look like when fully constructed.  To do this the program begins by pixelating the image, converting it to grayscale, and normalizing the pixel value between 0 and 9.  Then, it randomly generates a grid of domino orientations.  From here we formulate a linear program to assign dominoes to the generated grid given the constraint of number of sets of dominoes and the fact that each set only contains one of each type of domino.  Finally, once the LP's optimal assignment is determined, we generate the output domino image using the PIL library.`,
+        date: `Created June 2020`,
+        title: `Domino Image Creator`,
+        name: `domino`,
+        link: `https://github.com/lrylander/domino`,
+        video: `https://www.youtube.com/embed/B2IJ5uS-brs?rel=0&amp;showinfo=0`
+      },
+      {
         text: `Vulture is a free food web application designed to save MIT students money. The map on right side of the homescreen shows your current location (with automatic refreshing), and customized icons based on the food that is currently available at various locations around campus. The table on the left displays a summary of the current free food that is available. If you click on a listing, the card above will populate with more details, including an image of the food itself, and a "report gone" button. If 3+ people click the "report gone" button, the listing is deleted. Likewise, listings delete automatically after 1 hour so as not to clutter up the screen.\n\nTo post a listing, you must log in with Google authentication and fill out fields like MIT building, room number, etc. By requiring users to log in, we prevent spam and can easily block users that misuse the site. Other website features include an about page and a profile page. The site was built with NodeJS, ExpressJS, HTML, and CSS (Bootstrap).`,
         date: `Created January 2018`,
         title: `Vulture`,

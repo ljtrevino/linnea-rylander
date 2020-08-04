@@ -358,13 +358,13 @@ div {
   border-right: 5vw solid transparent;
 }
 
+.transition {
+  transition: all 1s, visibility 0s;
+}
+
 #linnear-arrow {
   border-bottom: 4vh solid #a9d562;
   margin-left: 45vw;
-}
-
-.transition {
-  transition: all 1s, visibility 0s;
 }
 
 .linnear-color {
@@ -391,16 +391,25 @@ div {
 
 #vulture-mit-arrow {
   border-top: 4vh solid #42ce97;
-  margin-left: 17vw;
+  margin-left: 26.75vw;
 }
 
 .vulture-mit-color {
   background-color: #42ce97 !important;
 }
 
+#domino-arrow {
+  border-top: 4vh solid #ffcf5a;
+  margin-left: 8.25vw;
+}
+
+.domino-color {
+  background-color: #ffcf5a !important;
+}
+
 #swe-mit-arrow {
   border-top: 4vh solid #aa98bf;
-  margin-left: 35.5vw;
+  margin-left: 45vw;
 }
 
 .swe-mit-color {
@@ -409,7 +418,7 @@ div {
 
 #slicer-arrow {
   border-top: 4vh solid #d1722e;
-  margin-left: 54.5vw;
+  margin-left: 63.5vw;
 }
 
 .slicer-color {
@@ -436,7 +445,7 @@ div {
 
 #code-for-good-arrow {
   border-top: 4vh solid #9acfdd;
-  margin-left: 73vw;
+  margin-left: 82vw;
 }
 
 .code-for-good-color {
